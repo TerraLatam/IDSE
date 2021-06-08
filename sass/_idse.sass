@@ -1,0 +1,546 @@
+//GENERALES
+.flex-row-space-between
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+
+.bg__orange
+  background-color: $orange
+
+.bg__white
+  background-color: $white
+
+.bg__grey
+  background-color: $grey
+
+.inline-container
+  display: flex
+  flex-direction: row
+  div:first-child
+    margin-right: 10px
+    color: $orange
+
+//BUTTONS
+.mobile-icon
+  min-width: 32px
+  min-height: 26px
+  text-align: center
+  margin: 0 8px
+  display: flex
+  padding: 5px 8px
+  border-radius: 4px
+  img
+    margin: auto
+
+.document__mobil-icon
+  display: none
+  cursor: pointer
+  border: 1px solid $orange
+
+.user__mobil-icon
+  display: none
+  cursor: pointer
+  margin-right: 14px
+
+.main-btn
+  text-transform: uppercase
+  font-size: .8em
+  font-weight: 600
+  border-radius: 4px
+  padding: 3px 8px
+  border: none
+  margin: 0 .6785rem
+  margin: 0
+  cursor: pointer
+  position: relative
+  width: 100%
+  text-align: center
+  will-change: background-position
+  background-size: 210% 100%
+  background-position: 99% center
+  background-repeat: no-repeat
+  -webkit-transition: background-position 0.66667s cubic-bezier(0.24, 0.22, 0.31, 1.07)
+  transition: background-position 0.66667s cubic-bezier(0.24, 0.22, 0.31, 1.07)
+
+  &__orange
+    color: $white
+    background-color: $orange
+    background-image: linear-gradient(100deg, $orangehover 50%, $orange 50%)
+
+  &__green
+    color: $white
+    background-color: $green
+    background-image: linear-gradient(100deg, $greenhover 50%, $green 50%)
+
+  &__black
+    color: $white
+    background-color: $black
+    background-image: linear-gradient(100deg, rgba(0,0,0,0.8) 50%, $black 50%)
+
+  &__white
+    background-color: transparent
+    background-image: linear-gradient(100deg, $lightgrey 50%, $white 50%)
+    border: 1px solid $lightgrey
+    color: $lightfont
+
+.main-btn:hover
+  background-position: 0 center
+
+//HEADER
+header
+  display: block
+  position: relative
+  background-color: $white
+
+.header__top--maincontainer
+  height: 96px
+
+.mobile_menu
+  display: none
+
+//HEADER DROPDOWN RIGHT
+.header__top--maintopnavigation
+  display: flex
+  flex-direction: row
+  z-index: 2
+.header__top--dropdown
+  margin-right: 15px
+.header__top--user-name
+  background-color: $grey
+  color: $white
+  width: 300px
+  height: 48px
+  border-radius: 8px
+  margin: auto
+.header__top--user-name:hover
+  border-radius: 8px 8px 0 0
+.header__top--user-name-content
+  color: $white
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  height: 100%
+  cursor: pointer
+  span
+    padding: 15px
+.header-wrapper
+  display: flex
+  flex-direction: row
+  align-items: center
+  height: 100%
+  padding: 0 20px
+  width: 100%
+.header__top--user-detail
+  display: none
+  background-color: $grey
+  color: $white
+  width: 100%
+  border-radius: 0 0 8px 8px
+  padding: 14px 20px
+  cursor: auto
+  border-top: 1px solid rgba(255,255,255,0.4)
+  .inline-container
+    margin: 8px 0
+  .inline-container:first-child
+    margin-top: 0
+.header__top--user-name-content:hover .header__top--user-detail
+  display: block
+
+progress[value]
+  -webkit-appearance: none
+  appearance: none
+  height: 20px
+  position: relative
+
+progress[value]::-webkit-progress-bar
+  background-color: $grey
+  border-radius: 4px
+  border: 1px solid $white
+
+progress[value]::-moz-progress-bar
+  background-color: $grey
+  border-radius: 4px 4px 4px 4px
+  border: 1px solid $white
+
+progress[value]::-webkit-progress-value
+  border-radius: 4px 0 0 4px
+  background-color: $backgroundgrey
+
+progress[value]::-moz-progress-value
+  border-radius: 4px 0 0 4px
+  background-color: $backgroundgrey
+
+progress:after
+  content: attr(value)'/100'
+  top: 0
+  position: absolute
+  z-index: 2
+  bottom: 0
+  right: 0
+  left: 0
+  text-align: center
+  line-height: 19px
+
+//HEADER DROPDOWN LEFT
+.header__top--dropdown-btn
+  background-color: $white
+  width: 300px
+  height: 48px
+  border-radius: 8px
+  border: 1px solid $orange
+  margin: auto
+
+.header__top--dropdown-btn:hover
+  border-radius: 8px 8px 0 0
+
+.header__top--dropdown-content
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  height: 100%
+  cursor: pointer
+  background-image: url(../img/icon-down-arrow.svg)
+  background-position: 95% center
+  background-repeat: no-repeat
+  span
+    padding: 15px
+
+.header__top--dropdown-content:hover
+  .header__top--documents-detail
+    display: block
+
+.header__top--documents-detail
+  display: none
+  background-color: $grey
+  color: $white
+  width: 100%
+  border-radius: 0 0 8px 8px
+  padding: 14px 20px
+  cursor: auto
+  border-top: 1px solid rgba(255,255,255,0.4)
+  border: 1px solid $grey
+  ul
+    margin-bottom: 12px
+    border-bottom: 1px solid rgba(255,255,255,0.4)
+    max-height: 274px
+    overflow-y: auto
+    li
+      list-style-type: none
+      margin: 8px 0
+      padding: 2px 8px
+    li:hover
+      cursor: pointer
+      background-color: #86888C
+      border-radius: 4px
+    li:first-child
+      padding-top: 0
+    li:last-child
+      padding-bottom: 0
+
+//NAVIGATION
+.header__bottom--mainnavigation
+  position: relative
+  width: 90%
+  margin: auto
+  ul
+    text-align: center
+    li > a
+      line-height: 64px
+    li
+      display: inline-block
+      list-style-type: none
+      font-size: 1.2em
+      text-transform: uppercase
+      font-weight: 600
+      position: relative
+      padding: 0 28px
+      a
+        color: $white
+      a:hover
+        text-decoration: none
+      a:hover:after
+        display: block
+        position: absolute
+        content: ''
+        width: calc(100% - 56px)
+        height: 3px
+        background-color: $white
+        bottom: 0
+        opacity: 1
+      ul
+        position: absolute
+        top: 64px
+        background-color: $lightgrey
+        flex-direction: column
+        display: none
+        padding: 10px
+        min-width: 180px
+        border-radius: 0 0 4px 4px
+        box-shadow: 0 5px 7px 1px rgba(0,0,0,0.15)
+        li
+          padding: 0
+          width: 100%
+          text-align: left
+          a
+            color: $grey
+            font-size: .7em
+            line-height: 20px
+            padding: 6px 10px
+            width: 100%
+            display: block
+            border-radius: 4px
+            text-transform: none
+          a:hover
+            background-color: $white
+            opacity: 1
+  ul > li:first-child
+    //padding-left: 0
+  ul > li:last-child
+    //padding-right: 0
+  ul > li:hover > ul
+    display: block
+
+.header__bottom--maincontainer
+  position: relative
+  z-index: 1
+  -webkit-transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms
+  -moz-transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms
+  transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms
+
+.header__bottom--maincontainer::after
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  content: ''
+  height: 6px
+  background-color: rgba(0,0,0,0.2)
+
+//MAIN
+.main__content
+  min-height: calc(100vh - 233px)
+
+//FOOTER
+footer
+  background: $grey
+  background: linear-gradient(90deg, rgba(95,95,95,1) 50%, rgba(255,114,18,1) 50%)
+
+.footer__container
+  display: flex
+  flex-direction: row
+
+.footer__grey
+  width: 80%
+  padding: 24px 0
+  position: relative
+  p
+    display: inline-flex
+    margin: 0
+    color: $white
+    padding-right: 12px
+    span
+      color: $orange
+      padding-left: 8px
+      a
+        color: $orange
+    a
+      color: $white
+.footer__grey::after
+  content: ''
+  display: block
+  position: absolute
+  right: -21px
+  top: 0
+  background-image: url(../img/triangle-footer.svg)
+  background-repeat: no-repeat
+  background-size: 22px
+  width: 22px
+  height: 100%
+
+
+.footer__orange
+  width: 20%
+  padding: 20px 0
+  position: relative
+  padding-left: 35px
+  display: flex
+  p
+    font-size: .8em
+    color: $white
+    margin: 0 0 0 16px
+    line-height: 1.5em
+
+
+
+
+//RESPONSIVE
+@media (min-width: $screen-xxl-dsk-1366)
+
+
+@media (max-width: $screen-xxl-dsk-1366)
+  .header__bottom--mainnavigation
+    width: 100%
+
+@media (max-width: $screen-xl-min-1210)
+  .header__bottom--mainnavigation
+    width: 100%
+    ul
+      li
+        padding: 0 7px
+        a:hover:after
+          width: calc(100% - 14px)
+  .footer__grey
+    width: 70%
+  .footer__orange
+    width: 30%
+
+@media (max-width: $screen-sm-dsk-1180)
+  .header__bottom--mainnavigation
+    width: 100%
+    ul
+      li
+        padding: 0 4px
+        a:hover:after
+          width: calc(100% - 8px)
+
+@media (max-width: $screen-lg-min-992)
+  .document__mobil-icon
+    display: flex
+  .user__mobil-icon
+    display: flex
+  .mobile_menu
+    display: block
+  //MENU
+  .header__bottom--mainnavigation
+    ul
+      li
+        display: block
+        text-align: left
+        ul
+          display: block
+          width: 100%
+          background: transparent
+          box-shadow: none
+          position: relative
+          top: auto
+          min-width: auto
+          padding: 0
+      li
+        a
+          line-height: 50px
+        a:hover:after
+          display: none
+  .header__bottom--maincontainer
+    transform: translateX(-100%)
+    -webkit-transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms
+    -moz-transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms
+    transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms
+  .mainMenuOpen
+    .header__bottom--maincontainer
+      transform: translateX(0)
+  .header__top--maincontainer::after
+    display: block
+    content: ''
+    background-color: $orangehover
+    width: 110%
+    height: 4px
+    position: absolute
+    top: 96px
+    left: -10%
+  //HEADER DROPDOWNS
+  .display-dropdownlist-movile
+    overflow: hidden
+  .display-dropdownlist-movile
+    .header__top--dropdown
+      display: block
+      position: absolute
+      top: 120px
+      left: 0
+      right: 0
+      margin: auto
+  .display-dropdownlist-movile
+    .header__top--dropdown-content::after
+      display: block
+      content: ''
+      position: fixed
+      width: 100%
+      height: 100%
+      top: 100px
+      bottom: 0
+      left: 0
+      right: 0
+      background-color: rgba(0,0,0,0.8)
+      z-index: 1
+  .display-userdata-movile
+    .header__top--container
+      display: block
+      position: absolute
+      top: 120px
+      left: 0
+      right: 0
+      margin: auto
+  .header__top--user-name-content
+    .header-wrapper
+      z-index: 2
+      border-radius: 4px
+      background-color: $grey
+  .header__top--dropdown-content
+    .header-wrapper
+      background-color: $white
+      z-index: 2
+      border-radius: 4px
+      border: 1px solid $orange
+  .header__top--documents-detail
+    z-index: 2
+  .display-userdata-movile
+    .header__top--user-name-content::after
+      display: block
+      content: ''
+      position: fixed
+      width: 100%
+      height: 100%
+      top: 100px
+      bottom: 0
+      left: 0
+      right: 0
+      background-color: rgba(0,0,0,0.8)
+      z-index: 1
+  .header__top--user-detail
+    z-index: 2
+  //FOOTER
+  .footer__grey p
+    display: block
+  .footer__grey
+    p.hide-on-mobile
+      display: none
+  .footer__orange
+    flex-direction: column
+  .footer__grey
+    width: 50%
+  .footer__orange
+    p
+      margin: 10px 0 0 0
+  .footer__orange
+    width: 50%
+    padding-left: 55px
+  .footer__grey::after
+    right: -36px
+    background-size: 37px
+    width: 37px
+  //BORRAR
+  .header__top--dropdown
+    display: none
+  .header__top--container
+    display: none
+
+@media (max-width: $screen-md-min-769)
+
+
+@media (max-width: $screen-sm-min-576)
+
+
+@media (max-width: $screen-xsm-min-375)
+
+
+@media (max-width: $screen-xxsm-min-321)

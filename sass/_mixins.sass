@@ -1,0 +1,16 @@
+@mixin media($media)
+  @if $media == xs
+    @media (max-width: $screen-md-min)
+      @content;
+
+  @else if $media == sm
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-min)
+      @content;
+
+  @else if $media == md
+    @media (min-width: $screen-lg-min) and (max-width: $screen-xl-min)
+      @content;
+
+  @else if $media == lg
+    @media (min-width: $screen-xl-min)
+      @content;

@@ -1,0 +1,147 @@
+html
+  scroll-behavior: smooth
+
+body
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-style: normal
+  font-family: $font-family
+  line-height: 1.75em
+  font-weight: 400
+  background-color: $white
+  font-size: $font-size
+
+*
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+*
+  box-sizing: border-box
+
+*:focus
+  outline: none
+
+header, main, footer
+  width: 100%
+
+section
+  display: block
+  padding: 40px 0
+  position: relative
+  width: 100%
+
+ul
+  padding: 0
+  margin: 0
+
+.fw
+  display: block
+  position: relative
+  width: 100%
+
+.box
+  max-width: 1366px
+  margin: auto
+  display: block
+  width: 100%
+
+.grid_cont
+  display: grid
+  grid-gap: 20px
+
+.clear::after
+  display: block
+  clear: both
+  content: ''
+
+.inner_container
+  padding: 0 40px
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+
+.generic_container
+  display: block
+  width: 100%
+  margin: 1em
+  padding: 0
+  position: relative
+
+.center_content
+  text-align: center
+
+.percent_10
+  max-width: 10%
+.percent_20
+  max-width: 20%
+.percent_30
+  max-width: 30%
+.percent_40
+  max-width: 40%
+.percent_50
+  max-width: 50%
+.percent_60
+  max-width: 60%
+.percent_70
+  max-width: 70%
+.percent_80
+  max-width: 80%
+.percent_90
+  max-width: 90%
+.percent_100
+  max-width: 100%
+  margin: auto
+
+div::-webkit-scrollbar
+    width: 8px
+    z-index: 100000
+
+div::-webkit-scrollbar-track
+    background: #f1f1f1
+
+div::-webkit-scrollbar-thumb
+    background: #888
+
+-webkit-scrollbar
+    width: 8px
+    z-index: 100000
+    overflow: overlay
+
+-webkit-scrollbar-track
+    background: #f1f1f1
+    overflow: overlay
+
+-webkit-scrollbar-thumb
+    background: #888
+    overflow: overlay
+
+
+
+//RESPONSIVE
+@media (min-width: $screen-xxl-dsk-1366)
+
+
+@media (max-width: $screen-xl-min-1210)
+  .box
+    width: 90%
+
+@media (max-width: $screen-sm-dsk-1180)
+
+
+@media (max-width: $screen-lg-min-992)
+  .inner_container
+    padding: 0
+
+@media (max-width: $screen-md-min-769)
+
+
+@media (max-width: $screen-sm-min-576)
+  .inner_container
+    padding: 0
+
+@media (max-width: $screen-xsm-min-375)
+
+
+@media (max-width: $screen-xxsm-min-321)
