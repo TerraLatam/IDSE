@@ -1,0 +1,200 @@
+.subheader
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+.subheader__rightmenu
+  ul
+    li
+      display: inline-flex
+      padding: 0 15px
+      font-size: 1.2em
+      a
+        color: rgba(0,0,0,0.5)
+      a.active
+        color: $orange
+    li:last-child
+      padding-right: 0
+
+.sua__hidden-data
+  display: none
+
+//CHECKBOX
+.container_checkbox
+  font-size: 1.2em
+  display: block
+  position: relative
+  padding-left: 35px
+  cursor: pointer
+  line-height: 1.2em
+  text-align: left
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  margin-bottom: 30px
+
+.container_checkbox input
+  position: absolute
+  opacity: 0
+  cursor: pointer
+  height: 0
+  width: 0
+
+.checkmark
+  position: absolute
+  top: 0
+  left: 0
+  height: 20px
+  width: 20px
+  background-color: #CDCDCD
+  border-radius: 5px
+  //border: 1px solid #CDCDCD
+
+.container_checkbox:hover input ~ .checkmark
+  background-color: #CDCDCD
+
+.checkmark:after
+  content: ""
+  position: absolute
+  display: none
+
+.container_checkbox input:checked ~ .checkmark:after
+  display: block
+
+.container_checkbox input:checked ~ .checkmark
+  background-color: $orange
+
+.container_checkbox .checkmark:after
+  left: 7px
+  top: 2px
+  width: 4px
+  height: 9px
+  border: solid $white
+  border-width: 0 3px 3px 0
+  -webkit-transform: rotate(45deg)
+  -ms-transform: rotate(45deg)
+  transform: rotate(45deg)
+
+//RADIO BUTTON
+.checkmark-radio
+  position: absolute
+  top: 0
+  left: 0
+  height: 20px
+  width: 20px
+  background-color: #CDCDCD
+  border-radius: 80px
+
+.container_checkbox:hover input ~ .checkmark-radio
+  background-color: #CDCDCD
+
+.checkmark-radio:after
+  content: ""
+  position: absolute
+  display: none
+
+.container_checkbox input:checked ~ .checkmark-radio:after
+  display: block
+
+.container_checkbox input:checked ~ .checkmark-radio
+  background-color: $orange
+
+.container_checkbox .checkmark-radio:after
+  left: 7px
+  top: 3px
+  width: 3px
+  height: 8px
+  border: solid $white
+  border-width: 0 3px 3px 0
+  -webkit-transform: rotate(45deg)
+  -ms-transform: rotate(45deg)
+  transform: rotate(45deg)
+
+//SELECT ITEMS
+.dropdown_item
+  position: relative
+  margin: 12px 0
+
+.select_label
+  text-transform: uppercase
+  font-size: .9em
+  color: $labelcolor
+  font-weight: 600
+
+.dropdown_item
+  label
+    text-transform: uppercase
+    font-size: .9em
+    color: $labelcolor
+    font-weight: 600
+    span
+      text-transform: none
+  input
+    display: block
+    width: 100%
+    padding: 12px
+    border: none
+    background-color: $lightgrey
+    border-radius: 6px
+    font-size: 1.3em
+
+.dropdown_item
+  select
+    width: 100%
+    padding: 12px
+    border: none
+    background-color: $lightgrey
+    border-radius: 6px
+    appearance: none
+    background-image: url(../img/icon-down-arrow.svg)
+    background-position: 95% center
+    background-repeat: no-repeat
+
+.dp__input
+  background-image: url(../img/icon-datepicker.svg)
+  background-position: 95% center
+  background-repeat: no-repeat
+
+.file_type
+  background-image: url(../img/icon-upload.svg)
+  background-position: 95% center
+  background-repeat: no-repeat
+
+input[type="file"]
+  border: none
+
+.delete_file
+  a
+    font-size: .9em
+    color: #86888C
+    margin-top: 15px
+
+
+//RESPONSIVE
+@media (min-width: $screen-xxl-dsk-1366)
+
+
+@media (max-width: $screen-xxl-dsk-1366)
+
+
+@media (max-width: $screen-xl-min-1210)
+
+
+@media (max-width: $screen-sm-dsk-1180)
+
+
+@media (max-width: $screen-lg-min-992)
+  .subheader__rightmenu
+    display: none
+
+@media (max-width: $screen-md-min-769)
+
+
+@media (max-width: $screen-sm-min-576)
+
+
+@media (max-width: $screen-xsm-min-375)
+
+
+@media (max-width: $screen-xxsm-min-321)

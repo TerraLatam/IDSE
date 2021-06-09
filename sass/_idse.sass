@@ -14,12 +14,56 @@
 .bg__grey
   background-color: $grey
 
+.bg__lightgrey
+  background-color: $lightgrey
+
 .inline-container
   display: flex
   flex-direction: row
   div:first-child
     margin-right: 10px
     color: $orange
+
+.main_content_wrapper
+  padding: 60px 0
+
+h2
+  font-weight: 400
+  font-size: 1.7em
+
+.content_module_wrapper
+  position: relative
+  margin: 30px 0
+  display: flex
+  flex-direction: column
+
+.vertical_itm
+  margin: 20px 0
+
+//SCROLLS
+.header__top--documents-detail
+  ul::-webkit-scrollbar-track
+    background: #86888C
+    border-radius: 3px
+
+// Handle
+.header__top--documents-detail
+  ul::-webkit-scrollbar-thumb
+    background: #e1e1e1
+    border-radius: 3px
+
+// Handle on hover
+.header__top--documents-detail
+  ul:-webkit-scrollbar-thumb:hover
+    background: $orange
+
+.header__top--documents-detail
+  ul::-webkit-scrollbar
+    height: 4px
+    width: 5px
+    border: 1px solid #d5d5d5
+    border-radius: 3px
+
 
 //BUTTONS
 .mobile-icon
@@ -45,10 +89,10 @@
 
 .main-btn
   text-transform: uppercase
-  font-size: .8em
+  font-size: .9em
   font-weight: 600
   border-radius: 4px
-  padding: 3px 8px
+  padding: 6px 8px
   border: none
   margin: 0 .6785rem
   margin: 0
@@ -87,6 +131,10 @@
 .main-btn:hover
   background-position: 0 center
 
+main
+  .main-btn
+    max-width: 300px
+
 //HEADER
 header
   display: block
@@ -113,8 +161,6 @@ header
   height: 48px
   border-radius: 8px
   margin: auto
-.header__top--user-name:hover
-  border-radius: 8px 8px 0 0
 .header__top--user-name-content
   color: $white
   display: flex
@@ -144,8 +190,11 @@ header
     margin: 8px 0
   .inline-container:first-child
     margin-top: 0
-.header__top--user-name-content:hover .header__top--user-detail
-  display: block
+.display-userdata-desktop
+  .header__top--user-detail
+    display: block
+  .header__top--user-name
+    border-radius: 8px 8px 0 0
 
 progress[value]
   -webkit-appearance: none
@@ -155,21 +204,23 @@ progress[value]
 
 progress[value]::-webkit-progress-bar
   background-color: $grey
-  border-radius: 4px
+  border-radius: 6px
   border: 1px solid $white
 
 progress[value]::-moz-progress-bar
   background-color: $grey
-  border-radius: 4px 4px 4px 4px
+  border-radius: 6px
   border: 1px solid $white
 
 progress[value]::-webkit-progress-value
   border-radius: 4px 0 0 4px
   background-color: $backgroundgrey
+  border: 1px solid $backgroundgrey
 
 progress[value]::-moz-progress-value
   border-radius: 4px 0 0 4px
   background-color: $backgroundgrey
+  border: 1px solid $backgroundgrey
 
 progress:after
   content: attr(value)'/100'
@@ -187,12 +238,10 @@ progress:after
   background-color: $white
   width: 300px
   height: 48px
-  border-radius: 8px
-  border: 1px solid $orange
   margin: auto
-
-.header__top--dropdown-btn:hover
-  border-radius: 8px 8px 0 0
+  .header-wrapper
+    border-radius: 8px
+    border: 1px solid $orange
 
 .header__top--dropdown-content
   display: flex
@@ -200,15 +249,13 @@ progress:after
   align-items: flex-start
   height: 100%
   cursor: pointer
-  background-image: url(../img/icon-down-arrow.svg)
-  background-position: 95% center
-  background-repeat: no-repeat
+  .header-wrapper
+    background-image: url(../img/icon-down-arrow.svg)
+    background-position: 95% center
+    background-repeat: no-repeat
   span
     padding: 15px
 
-.header__top--dropdown-content:hover
-  .header__top--documents-detail
-    display: block
 
 .header__top--documents-detail
   display: none
@@ -216,7 +263,7 @@ progress:after
   color: $white
   width: 100%
   border-radius: 0 0 8px 8px
-  padding: 14px 20px
+  padding: 0 0 14px 0
   cursor: auto
   border-top: 1px solid rgba(255,255,255,0.4)
   border: 1px solid $grey
@@ -229,6 +276,8 @@ progress:after
       list-style-type: none
       margin: 8px 0
       padding: 2px 8px
+      width: 90%
+      margin: auto
     li:hover
       cursor: pointer
       background-color: #86888C
@@ -237,11 +286,24 @@ progress:after
       padding-top: 0
     li:last-child
       padding-bottom: 0
+.btn_container
+  display: flex
+  align-items: center
+  justify-content: center
+  .main-btn
+    max-width: 90%
+//ON CLICK DROPDOWN MENU
+.display-dropdownlist-desktop
+  .header__top--documents-detail
+    display: block
+  .header__top--dropdown-btn
+    .header-wrapper
+      border-radius: 8px 8px 0 0
 
 //NAVIGATION
 .header__bottom--mainnavigation
   position: relative
-  width: 90%
+  width: 100%
   margin: auto
   ul
     text-align: center
@@ -381,15 +443,21 @@ footer
 @media (max-width: $screen-xxl-dsk-1366)
   .header__bottom--mainnavigation
     width: 100%
+    ul
+      li
+        font-size: 1.1em
+        padding: 0 20px
+        a:hover:after
+          width: calc(100% - 40px)
 
 @media (max-width: $screen-xl-min-1210)
   .header__bottom--mainnavigation
     width: 100%
     ul
       li
-        padding: 0 7px
+        padding: 0 10px
         a:hover:after
-          width: calc(100% - 14px)
+          width: calc(100% - 20px)
   .footer__grey
     width: 70%
   .footer__orange
@@ -400,11 +468,14 @@ footer
     width: 100%
     ul
       li
-        padding: 0 4px
+        padding: 0 3px
         a:hover:after
-          width: calc(100% - 8px)
+          width: calc(100% - 6px)
 
 @media (max-width: $screen-lg-min-992)
+  //MAIN
+  .main__content
+    min-height: calc(100vh - 184px)
   .document__mobil-icon
     display: flex
   .user__mobil-icon
@@ -412,13 +483,31 @@ footer
   .mobile_menu
     display: block
   //MENU
+  .header__top--maincontainer
+    height: 64px
+  .submenu-active
+    background-color: #fff
+    opacity: 1
+  .header__top--image
+    height: 30px
+  .header__bottom--mainnavigation
+    ul
+      li
+        ul
+          li
+            a:hover
+              color: inherit
+              opacity: inherit
+  .header__bottom--mainnavigation
+    ul>li:hover>ul
+      display: none
   .header__bottom--mainnavigation
     ul
       li
         display: block
         text-align: left
         ul
-          display: block
+          display: none
           width: 100%
           background: transparent
           box-shadow: none
@@ -428,10 +517,19 @@ footer
           padding: 0
       li
         a
-          line-height: 50px
+          line-height: 44px
+          width: 100%
+          display: block
         a:hover:after
           display: none
+      li.show-mobile-menu
+        ul
+          display: block
   .header__bottom--maincontainer
+    min-height: calc(100vh - 64px)
+    position: absolute
+    top: 64px
+    width: 100%
     transform: translateX(-100%)
     -webkit-transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms
     -moz-transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms
@@ -439,6 +537,8 @@ footer
   .mainMenuOpen
     .header__bottom--maincontainer
       transform: translateX(0)
+    .header__bottom--mainnavigation
+      margin-top: 15px
   .header__top--maincontainer::after
     display: block
     content: ''
@@ -446,16 +546,38 @@ footer
     width: 110%
     height: 4px
     position: absolute
-    top: 96px
+    top: 64px
     left: -10%
+    z-index: 1
+  .header__bottom--mainnavigation
+    ul
+      li
+        ul
+          li
+            a
+              font-size: .9em
+  .li-w-sm
+    background-image: url(../img/icon-down-arrow-moobile.svg)
+    background-position: 97% 21px
+    background-repeat: no-repeat
+    background-size: 12px
+  .li-w-sm.show-mobile-menu
+    background-position: 97% 21px
+    background-image: url(../img/icon-top-arrow-moobile.svg)
+  main
+    .main-btn
+      width: 100%
+      max-width: 100%
   //HEADER DROPDOWNS
   .display-dropdownlist-movile
+    overflow: hidden
+  .display-userdata-movile
     overflow: hidden
   .display-dropdownlist-movile
     .header__top--dropdown
       display: block
       position: absolute
-      top: 120px
+      top: 94px
       left: 0
       right: 0
       margin: auto
@@ -466,7 +588,7 @@ footer
       position: fixed
       width: 100%
       height: 100%
-      top: 100px
+      top: 68px
       bottom: 0
       left: 0
       right: 0
@@ -476,7 +598,7 @@ footer
     .header__top--container
       display: block
       position: absolute
-      top: 120px
+      top: 94px
       left: 0
       right: 0
       margin: auto
@@ -500,7 +622,7 @@ footer
       position: fixed
       width: 100%
       height: 100%
-      top: 100px
+      top: 68px
       bottom: 0
       left: 0
       right: 0

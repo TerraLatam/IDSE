@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>IDSE</title>
+    <title>IDSE Exportación SUA</title>
     <meta name="author" content="" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,6 +15,7 @@
     <meta name="theme-color" content="#ffffff" />
 
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -140,7 +141,7 @@
                 <li><a href="">Monitoreo</a></li>
                 <li class="li-w-sm"><a class="has-submenu" href="idse-exportacion-sua-inicial.html">Exportación SUA</a>
                   <ul>
-                    <li><a href="idse-exportacion-sua-inicial.html">Exportación SUA</a></li>
+                    <li><a class="submenu-active" href="idse-exportacion-sua-inicial.html">Exportación SUA</a></li>
                     <li><a href="idse-ausentismos-incapacidades.html">Ausentismos e Incapacidades</a></li>
                   </ul>
                 </li>
@@ -151,11 +152,121 @@
         </div>
       </header>
 
-      <main role="main" class="main__content fw">
-        <div class="box inner_container">
 
+      <main role="main" class="main__content fw">
+        <div class="fw bg__lightgrey">
+          <div class="subheader box inner_container">
+            <h1>Exportación SUA</h1>
+            <div class="subheader__rightmenu">
+              <ul>
+                <li><a href="#" class="active">Exportación SUA</a></li>
+                <li><a href="idse-ausentismos-incapacidades.html">Ausentismos e Incapacidades</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
+
+        <div class="box inner_container">
+          <div class="main_content_wrapper">
+            <div class="hw-col">
+              <h2>Exportación SUA</h2>
+
+              <div class="content_module_wrapper">
+                <div class="vertical_itm">
+                  <div class="checkbox_container">
+ 									 <label class="container_checkbox middle_title">Incluir Ausentismo e Incapacidades
+ 										 <input id="" class="ausentismo-incapacidades" type="checkbox">
+ 										 <span class="checkmark"></span>
+ 									 </label>
+
+                   <div class="sua__hidden-data sua__ausentismoo-options">
+                     <h2>Exportación SUA</h2>
+                     <div class="dropdown_item">
+                       <div class="select_label">Registro patronal</div>
+                       <select name="select">
+                         <option selected disabled>Seleccionar</option>
+                         <option value="value1">Value 1</option>
+                         <option value="value2">Value 2</option>
+                       </select>
+                     </div>
+                     <div class="dropdown_item">
+                       <div class="select_label">Tipo incidente</div>
+                       <select name="select">
+                         <option selected disabled>Seleccionar</option>
+                         <option value="value1">Value 1</option>
+                         <option value="value2">Value 2</option>
+                       </select>
+                     </div>
+                     <div class="dropdown_item">
+                       <label>Fecha inicial <span>(dd/mm/aaaa)</span>
+                         <input type="text" id="" name="" class="dp__input sua__auycs--dpinicio" placeholder="dd/mm/yyy" />
+                       </label>
+                     </div>
+                     <div class="dropdown_item">
+                       <label>Fecha final <span>(dd/mm/aaaa)</span>
+                         <input type="text" id="" name="" class="dp__input sua__auycs--dpfin" placeholder="dd/mm/yyy" />
+                       </label>
+                     </div>
+                   </div>
+
+ 								 </div>
+                </div>
+
+                <div class="vertical_itm">
+                  <div class="checkbox_container">
+ 									 <label class="container_checkbox middle_title">Incluir Movimienos Afiliatorios
+ 										 <input id="" class="movimientos-afilatorios" type="checkbox">
+ 										 <span class="checkmark"></span>
+ 									 </label>
+
+                   <div class="sua__hidden-data sua__movimientos-options">
+                     <h2>Movimientos Afiliatorios</h2>
+                     <label class="container_checkbox middle_title">Incluir movimientos rechazados
+   										 <input id="" class="movimientos-rechazados" type="checkbox">
+   										 <span class="checkmark"></span>
+   									 </label>
+                     <div class="dropdown_item">
+                       <div class="select_label">Registro patronal</div>
+                       <select name="select">
+                         <option selected disabled>Seleccionar</option>
+                         <option value="value1">Value 1</option>
+                         <option value="value2">Value 2</option>
+                       </select>
+                     </div>
+                     <div class="dropdown_item">
+                       <div class="select_label">Tipo movimiento</div>
+                       <select name="select">
+                         <option selected disabled>Seleccionar</option>
+                         <option value="value1">Value 1</option>
+                         <option value="value2">Value 2</option>
+                       </select>
+                     </div>
+                     <div class="dropdown_item">
+                       <label>Fecha inicial <span>(dd/mm/aaaa)</span>
+                         <input type="text" id="" name="" class="dp__input sua__moaf--dpinicio" placeholder="dd/mm/yyy"/>
+                       </label>
+                     </div>
+                     <div class="dropdown_item">
+                       <label>Fecha final <span>(dd/mm/aaaa)</span>
+                         <input type="text" id="" name="" class="dp__input sua__moaf--dpfin" placeholder="dd/mm/yyy"/>
+                       </label>
+                     </div>
+                   </div>
+
+ 								 </div>
+                </div>
+
+                <div class="vertical_itm">
+                  <button id="" class="main-btn main-btn__orange">Exportación SUA</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
       </main>
+
 
       <footer role="footer" class="fw">
         <div class="box inner_container footer__container">
@@ -177,6 +288,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
     <script src="js/CustomEase.min.js"></script>
     <script src="js/main.js"></script>
   </body>
