@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>IDSE Exportación SUA</title>
+    <title>IDSE | Monitoreo - Histórico de Movimientos</title>
     <meta name="author" content="" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -140,13 +140,13 @@
                 <li><a href="idse-subsidiarias.html">Subsidiarias</a></li>
                 <li class="li-w-sm"><a class="has-submenu" href="idse-monitoreo-historico-de-movimientos.html">Monitoreo</a>
                   <ul>
-                    <li><a href="idse-monitoreo-historico-de-movimientos.html" class="active">Histórico de Movimientos</a></li>
+                    <li><a class="submenu-active" href="idse-monitoreo-historico-de-movimientos.html" class="active">Histórico de Movimientos</a></li>
                     <li><a href="idse-monitoreo-ftp.html">Monitoreo FTP</a></li>
                   </ul>
                 </li>
                 <li class="li-w-sm"><a class="has-submenu" href="idse-exportacion-sua-inicial.html">Exportación SUA</a>
                   <ul>
-                    <li><a class="submenu-active" href="idse-exportacion-sua-inicial.html">Exportación SUA</a></li>
+                    <li><a href="idse-exportacion-sua-inicial.html">Exportación SUA</a></li>
                     <li><a href="idse-ausentismos-incapacidades.html">Ausentismos e Incapacidades</a></li>
                   </ul>
                 </li>
@@ -161,11 +161,11 @@
       <main role="main" class="main__content fw">
         <div class="fw bg__lightgrey">
           <div class="subheader box inner_container">
-            <h1>Exportación SUA</h1>
+            <h1>Monitoreo</h1>
             <div class="subheader__rightmenu">
               <ul>
-                <li><a href="#" class="active">Exportación SUA</a></li>
-                <li><a href="idse-ausentismos-incapacidades.html">Ausentismos e Incapacidades</a></li>
+                <li><a href="#" class="active">Histórico de Movimientos</a></li>
+                <li><a href="idse-monitoreo-ftp.html">Monitoreo FTP</a></li>
               </ul>
             </div>
           </div>
@@ -173,97 +173,129 @@
 
         <div class="box inner_container">
           <div class="main_content_wrapper">
-            <div class="hw-col">
-              <h2>Exportación SUA</h2>
+            <div class="fw">
+              <h2>Monitoreo de actualización de lotes históricos</h2>
 
               <div class="content_module_wrapper">
-                <div class="vertical_itm">
-                  <div class="checkbox_container">
- 									 <label class="container_checkbox middle_title">Incluir Ausentismo e Incapacidades
- 										 <input id="" class="ausentismo-incapacidades" type="checkbox">
- 										 <span class="checkmark"></span>
- 									 </label>
-
-                   <div class="sua__hidden-data sua__ausentismoo-options">
-                     <h2>Exportación SUA</h2>
-                     <div class="dropdown_item">
-                       <div class="select_label">Registro patronal</div>
-                       <select name="select">
-                         <option selected disabled>Seleccionar</option>
-                         <option value="value1">Value 1</option>
-                         <option value="value2">Value 2</option>
-                       </select>
-                     </div>
-                     <div class="dropdown_item">
-                       <div class="select_label">Tipo incidente</div>
-                       <select name="select">
-                         <option selected disabled>Seleccionar</option>
-                         <option value="value1">Value 1</option>
-                         <option value="value2">Value 2</option>
-                       </select>
-                     </div>
-                     <div class="dropdown_item">
-                       <label>Fecha inicial <span>(dd/mm/aaaa)</span>
-                         <input type="text" id="" name="" class="dp__input sua__auycs--dpinicio" placeholder="dd/mm/yyy" />
-                       </label>
-                     </div>
-                     <div class="dropdown_item">
-                       <label>Fecha final <span>(dd/mm/aaaa)</span>
-                         <input type="text" id="" name="" class="dp__input sua__auycs--dpfin" placeholder="dd/mm/yyy" />
-                       </label>
-                     </div>
-                   </div>
-
- 								 </div>
-                </div>
-
-                <div class="vertical_itm">
-                  <div class="checkbox_container">
- 									 <label class="container_checkbox middle_title">Incluir Movimienos Afiliatorios
- 										 <input id="" class="movimientos-afilatorios" type="checkbox">
- 										 <span class="checkmark"></span>
- 									 </label>
-
-                   <div class="sua__hidden-data sua__movimientos-options">
-                     <h2>Movimientos Afiliatorios</h2>
-                     <label class="container_checkbox middle_title">Incluir movimientos rechazados
-   										 <input id="" class="movimientos-rechazados" type="checkbox">
-   										 <span class="checkmark"></span>
-   									 </label>
-                     <div class="dropdown_item">
-                       <div class="select_label">Registro patronal</div>
-                       <select name="select">
-                         <option selected disabled>Seleccionar</option>
-                         <option value="value1">Value 1</option>
-                         <option value="value2">Value 2</option>
-                       </select>
-                     </div>
-                     <div class="dropdown_item">
-                       <div class="select_label">Tipo movimiento</div>
-                       <select name="select">
-                         <option selected disabled>Seleccionar</option>
-                         <option value="value1">Value 1</option>
-                         <option value="value2">Value 2</option>
-                       </select>
-                     </div>
-                     <div class="dropdown_item">
-                       <label>Fecha inicial <span>(dd/mm/aaaa)</span>
-                         <input type="text" id="" name="" class="dp__input sua__moaf--dpinicio" placeholder="dd/mm/yyy"/>
-                       </label>
-                     </div>
-                     <div class="dropdown_item">
-                       <label>Fecha final <span>(dd/mm/aaaa)</span>
-                         <input type="text" id="" name="" class="dp__input sua__moaf--dpfin" placeholder="dd/mm/yyy"/>
-                       </label>
-                     </div>
-                   </div>
-
- 								 </div>
-                </div>
-
-                <div class="vertical_itm">
-                  <button id="" class="main-btn main-btn__orange">Exportación SUA</button>
-                </div>
+                <!--Tables-->
+                <div class="tables_container tables-lotes-historicos">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">nPIE</th>
+        					      <th scope="col">Reg. Pat.</th>
+        					      <th scope="col">Lotes Promedio</th>
+        					      <th scope="col">Fase</th>
+        								<th scope="col">Estatus</th>
+        								<th scope="col">Última Fecha</th>
+        								<th scope="col">Último Lote</th>
+                        <th scope="col">Error</th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+        								<td data-label="">SSED23478P1</td>
+        					      <td data-label="">Y681534310</td>
+        					      <td data-label="">12</td>
+        					      <td data-label="">Diferencial</td>
+        								<td data-label="">Lotes diferencial en proceso.</td>
+        								<td data-label="">09/15/2020 2:37 PM</td>
+        								<td data-label="">2145678612</td>
+                        <td data-label="">brayamdesign</td>
+        					    </tr>
+        					    <tr>
+                        <td data-label="">SSED23478P1</td>
+        					      <td data-label="">Y681534310</td>
+        					      <td data-label="">12</td>
+        					      <td data-label="">Diferencial</td>
+        								<td data-label="">Lotes diferencial en proceso.</td>
+        								<td data-label="">09/15/2020 2:37 PM</td>
+        								<td data-label="">2145678612</td>
+                        <td data-label="">brayamdesign</td>
+        					    </tr>
+        					    <tr>
+                        <td data-label="">SSED23478P1</td>
+        					      <td data-label="">Y681534310</td>
+        					      <td data-label="">12</td>
+        					      <td data-label="">Diferencial</td>
+        								<td data-label="">Lotes diferencial en proceso.</td>
+        								<td data-label="">09/15/2020 2:37 PM</td>
+        								<td data-label="">2145678612</td>
+                        <td data-label="">brayamdesign</td>
+        					    </tr>
+        					    <tr>
+                        <td data-label="">SSED23478P1</td>
+        					      <td data-label="">Y681534310</td>
+        					      <td data-label="">12</td>
+        					      <td data-label="">Diferencial</td>
+        								<td data-label="">Lotes diferencial en proceso.</td>
+        								<td data-label="">09/15/2020 2:37 PM</td>
+        								<td data-label="">2145678612</td>
+                        <td data-label="">brayamdesign</td>
+        					    </tr>
+        							<tr>
+                        <td data-label="">SSED23478P1</td>
+        					      <td data-label="">Y681534310</td>
+        					      <td data-label="">12</td>
+        					      <td data-label="">Diferencial</td>
+        								<td data-label="">Lotes diferencial en proceso.</td>
+        								<td data-label="">09/15/2020 2:37 PM</td>
+        								<td data-label="">2145678612</td>
+                        <td data-label="">brayamdesign</td>
+        					    </tr>
+        					    <tr>
+                        <td data-label="">SSED23478P1</td>
+        					      <td data-label="">Y681534310</td>
+        					      <td data-label="">12</td>
+        					      <td data-label="">Diferencial</td>
+        								<td data-label="">Lotes diferencial en proceso.</td>
+        								<td data-label="">09/15/2020 2:37 PM</td>
+        								<td data-label="">2145678612</td>
+                        <td data-label="">brayamdesign</td>
+        					    </tr>
+        					    <tr>
+                        <td data-label="">SSED23478P1</td>
+        					      <td data-label="">Y681534310</td>
+        					      <td data-label="">12</td>
+        					      <td data-label="">Diferencial</td>
+        								<td data-label="">Lotes diferencial en proceso.</td>
+        								<td data-label="">09/15/2020 2:37 PM</td>
+        								<td data-label="">2145678612</td>
+                        <td data-label="">brayamdesign</td>
+        					    </tr>
+        					    <tr>
+                        <td data-label="">SSED23478P1</td>
+        					      <td data-label="">Y681534310</td>
+        					      <td data-label="">12</td>
+        					      <td data-label="">Diferencial</td>
+        								<td data-label="">Lotes diferencial en proceso.</td>
+        								<td data-label="">09/15/2020 2:37 PM</td>
+        								<td data-label="">2145678612</td>
+                        <td data-label="">brayamdesign</td>
+        					    </tr>
+        							<tr>
+                        <td data-label="">SSED23478P1</td>
+        					      <td data-label="">Y681534310</td>
+        					      <td data-label="">12</td>
+        					      <td data-label="">Diferencial</td>
+        								<td data-label="">Lotes diferencial en proceso.</td>
+        								<td data-label="">09/15/2020 2:37 PM</td>
+        								<td data-label="">2145678612</td>
+                        <td data-label="">brayamdesign</td>
+        					    </tr>
+        					    <tr>
+                        <td data-label="">SSED23478P1</td>
+        					      <td data-label="">Y681534310</td>
+        					      <td data-label="">12</td>
+        					      <td data-label="">Diferencial</td>
+        								<td data-label="">Lotes diferencial en proceso.</td>
+        								<td data-label="">09/15/2020 2:37 PM</td>
+        								<td data-label="">2145678612</td>
+                        <td data-label="">brayamdesign</td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div>
 
               </div>
             </div>

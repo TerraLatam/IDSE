@@ -1,0 +1,322 @@
+//TABLAS
+.tables_container
+  margin-bottom: 2rem
+.tables_container
+  table
+    //border: 1px solid #ccc
+    border-collapse: collapse
+    margin: 0
+    padding: 0
+    width: 100%
+    table-layout: fixed
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+    tbody
+      tr
+        td
+          text-overflow: ellipsis
+          overflow: hidden
+          white-space: nowrap
+          display: inline-block
+  table caption
+    font-size: 1.5em
+    margin: .5em 0 .75em
+  table tr
+    background-color: $white
+    border: 1px solid $lightgrey
+    padding: .35em
+    font-size: 1em
+    display: inline-table
+    width: 100%
+  table tr:nth-child(even)
+    background-color: $white
+  table th, table td
+    padding: .625em
+    text-align: left
+  table th
+    font-size: 1.1em
+    display: inline-block
+    //padding-left: 0
+  table th:first-child
+    //padding-left: 30px
+//TABLA Monitoreo de actualizacion de lotes historicos
+.tables-lotes-historicos
+  table
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        th:nth-child(1)
+          width: 140px
+          padding-left: 30px
+        th:nth-child(2)
+          width: 135px
+        th:nth-child(3)
+          width: 165px
+          text-align: center
+        th:nth-child(4)
+          width: 125px
+        th:nth-child(5)
+          width: 200px
+        th:nth-child(6)
+          width: 185px
+        th:nth-child(7)
+          width: 165px
+        th:nth-child(8)
+          width: 165px
+    tbody
+      tr
+        td:nth-child(1)
+          width: 140px
+          padding-left: 30px
+        td:nth-child(2)
+          width: 135px
+        td:nth-child(3)
+          width: 165px
+          text-align: center
+        td:nth-child(4)
+          width: 125px
+        td:nth-child(5)
+          width: 200px
+        td:nth-child(6)
+          width: 185px
+        td:nth-child(7)
+          width: 165px
+        td:nth-child(8)
+          width: 165px
+
+@media screen and (max-width: 1366px)
+  .tables_container
+    overflow-x: auto
+    table
+      width: 1290px
+
+
+//TABLA MONITOREO FTP
+.tables_container.tables-monitoreo-ftp
+  overflow-x: auto
+  table
+    width: 2160px
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        th:nth-child(1)
+          width: 240px
+          padding-left: 30px
+        th:nth-child(2)
+          width: 280px
+        th:nth-child(3)
+          width: 350px
+        th:nth-child(4)
+          width: 125px
+        th:nth-child(5)
+          width: 200px
+          text-align: center
+        th:nth-child(6)
+          width: 185px
+          text-align: center
+        th:nth-child(7)
+          width: 185px
+          text-align: center
+        th:nth-child(8)
+          width: 185px
+          text-align: center
+        th:nth-child(9)
+          width: 185px
+          text-align: center
+        th:nth-child(10)
+          width: 185px
+          text-align: center
+    tbody
+      tr
+        td:nth-child(1)
+          width: 240px
+          padding-left: 30px
+        td:nth-child(2)
+          width: 280px
+        td:nth-child(3)
+          width: 350px
+        td:nth-child(4)
+          width: 125px
+        td:nth-child(5)
+          width: 200px
+          text-align: center
+        td:nth-child(6)
+          width: 185px
+          text-align: center
+        td:nth-child(7)
+          width: 185px
+          text-align: center
+        td:nth-child(8)
+          width: 185px
+          text-align: center
+        td:nth-child(9)
+          width: 185px
+          text-align: center
+        td:nth-child(10)
+          width: 185px
+          text-align: center
+
+.monitoreo__detail--row
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  .main-btn
+    padding: 6px 40px
+    display: flex
+    align-items: center
+  select
+    border: none
+    font-size: .85em
+    margin-left: 14px
+    color: $orange
+.excel_icon
+  display: inline-block
+  margin-right: 10px
+
+.bottom_line
+  font-size: .9em
+
+.ver-detalle
+  color: $orange
+
+.modal
+  .monitoreo__detail--row
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    h3
+      font-weight: 400
+      font-size: 1.3em
+      margin-bottom: 5px
+    .modal_fecha
+      color: rgba(0,0,0,0.7)
+  .tables_container
+    th
+      font-weight: 600
+    table
+      width: 865px
+
+//TABLA MONITOREO FTP
+.tables_container.tables-monitoreo-modal
+  overflow-x: auto
+  table
+    width: 865px
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        th:nth-child(1)
+          width: 40px
+          padding-left: 15px
+        th:nth-child(2)
+          width: 135px
+          text-align: center
+        th:nth-child(3)
+          width: 135px
+          text-align: center
+        th:nth-child(4)
+          width: 90px
+        th:nth-child(5)
+          width: 155px
+          text-align: center
+        th:nth-child(6)
+          width: 150px
+          text-align: center
+        th:nth-child(7)
+          width: 150px
+          text-align: center
+    tbody
+      tr
+        td:nth-child(1)
+          width: 40px
+          padding-left: 15px
+        td:nth-child(2)
+          width: 135px
+          text-align: center
+        td:nth-child(3)
+          width: 135px
+          text-align: center
+        td:nth-child(4)
+          width: 90px
+        td:nth-child(5)
+          width: 155px
+          text-align: center
+        td:nth-child(6)
+          width: 150px
+          text-align: center
+        td:nth-child(7)
+          width: 150px
+          text-align: center
+
+
+//SCROLLS
+.tables_container::-webkit-scrollbar-track
+    background: #e1e1e1
+    border-radius: 3px
+
+// Handle
+.tables_container::-webkit-scrollbar-thumb
+    background: #86888C
+    border-radius: 3px
+
+// Handle on hover
+.tables_container:-webkit-scrollbar-thumb:hover
+    background: $orange
+
+.tables_container::-webkit-scrollbar
+    height: 7px
+    width: 7px
+    border: 1px solid #d5d5d5
+    border-radius: 3px
+
+
+@media screen and (min-width: 1366px)
+  .tables_container
+    table
+      border-collapse: collapse
+      margin: 0
+      padding: 0
+      width: 100%
+      table-layout: fixed
+
+
+
+//RESPONSIVE
+@media (min-width: $screen-xxl-dsk-1366)
+
+
+@media (max-width: $screen-xxl-dsk-1366)
+
+
+@media (max-width: $screen-xl-min-1210)
+
+
+@media (max-width: $screen-sm-dsk-1180)
+
+
+@media (max-width: $screen-lg-min-992)
+
+
+@media (max-width: $screen-md-min-769)
+
+
+@media (max-width: $screen-sm-min-576)
+  .monitoreo__detail--row
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    div:first-child
+      margin-bottom: 10px
+      span
+        select
+          margin-left: 0
+
+@media (max-width: $screen-xsm-min-375)
+
+
+@media (max-width: $screen-xxsm-min-321)

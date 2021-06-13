@@ -17,6 +17,9 @@
 .bg__lightgrey
   background-color: $lightgrey
 
+.bg__green
+  background-color: $green
+
 .inline-container
   display: flex
   flex-direction: row
@@ -39,6 +42,125 @@ h2
 
 .vertical_itm
   margin: 20px 0
+
+//MODALES
+.modal
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 1050
+  display: none
+  width: 100%
+  height: 100%
+  overflow: hidden
+  outline: 0
+  background: rgba(0,0,0,0.78)
+  .close
+    border: none
+    font-size: 2em
+    cursor: pointer
+    background-color: transparent
+
+.modal-open
+  .modal
+    overflow-x: hidden
+    overflow-y: auto
+    display: block
+
+.modal-open
+    overflow: hidden
+
+
+.fade
+  transition: opacity .15s linear
+
+.modal-dialog
+  position: relative
+  width: auto
+  margin: .5rem
+  pointer-events: none
+
+.modal.show .modal-dialog
+  -webkit-transform: none
+  transform: none
+
+@media (min-width: 576px)
+  .modal-dialog
+    max-width: 570px
+    margin: 1.75rem auto
+
+@media (min-width: 992px)
+  .modal-lg, .modal-xl
+    max-width: 910px
+
+.modal-dialog
+  margin-left: auto
+  margin-right: auto
+
+.modal.fade .modal-dialog
+  transition: -webkit-transform .3s ease-out
+  transition: transform .3s ease-out
+  transition: transform .3s ease-out,-webkit-transform .3s ease-out
+  -webkit-transform: translate(0,-50px)
+  transform: translate(0,-50px)
+
+.modal.show .modal-dialog
+  -webkit-transform: none
+  transform: none
+
+.modal-content
+  position: relative
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-direction: column
+  flex-direction: column
+  width: 100%
+  pointer-events: auto
+  background-color: #fff
+  background-clip: padding-box
+  border: 1px solid rgba(0,0,0,.2)
+  border-radius: .3rem
+  outline: 0
+
+.modal-header
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-align: start
+  align-items: flex-start
+  -ms-flex-pack: justify
+  justify-content: space-between
+  padding: 1rem 1rem
+  border-bottom: 1px solid #dee2e6
+  border-top-left-radius: calc(.3rem - 1px)
+  border-top-right-radius: calc(.3rem - 1px)
+  padding: 1.25rem
+  background-color: $lightgrey
+
+.modal-body
+  position: relative
+  -ms-flex: 1 1 auto
+  flex: 1 1 auto
+  padding: 1rem
+  padding: 1.25rem
+
+.modal-footer
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  -ms-flex-align: center
+  align-items: center
+  -ms-flex-pack: end
+  justify-content: flex-end
+  padding: .75rem
+  border-top: 1px solid #dee2e6
+  border-bottom-right-radius: calc(.3rem - 1px)
+  border-bottom-left-radius: calc(.3rem - 1px)
+  background-color: $lightgrey
+  .main-btn
+    max-width: 120px
+
+
 
 //SCROLLS
 .header__top--documents-detail

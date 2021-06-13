@@ -163,3 +163,17 @@ $(function () {
         }
     });
 });
+
+
+//Monitoreo de archivos enviados por FTP
+$('.ver-detalle').click(function(event){
+  event.preventDefault();
+  $('body').addClass('modal-open');
+  $('.modal').addClass('show');
+})
+
+$('.close_modal').click(function(event){
+  event.preventDefault();
+  $('body').removeClass('modal-open');
+  $('.modal').removeClass('show');
+})

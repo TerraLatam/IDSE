@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>IDSE Exportación SUA</title>
+    <title>IDSE | Monitoreo - Histórico de Movimientos</title>
     <meta name="author" content="" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -141,12 +141,12 @@
                 <li class="li-w-sm"><a class="has-submenu" href="idse-monitoreo-historico-de-movimientos.html">Monitoreo</a>
                   <ul>
                     <li><a href="idse-monitoreo-historico-de-movimientos.html" class="active">Histórico de Movimientos</a></li>
-                    <li><a href="idse-monitoreo-ftp.html">Monitoreo FTP</a></li>
+                    <li><a class="submenu-active" href="idse-monitoreo-ftp.html">Monitoreo FTP</a></li>
                   </ul>
                 </li>
                 <li class="li-w-sm"><a class="has-submenu" href="idse-exportacion-sua-inicial.html">Exportación SUA</a>
                   <ul>
-                    <li><a class="submenu-active" href="idse-exportacion-sua-inicial.html">Exportación SUA</a></li>
+                    <li><a href="idse-exportacion-sua-inicial.html">Exportación SUA</a></li>
                     <li><a href="idse-ausentismos-incapacidades.html">Ausentismos e Incapacidades</a></li>
                   </ul>
                 </li>
@@ -161,11 +161,11 @@
       <main role="main" class="main__content fw">
         <div class="fw bg__lightgrey">
           <div class="subheader box inner_container">
-            <h1>Exportación SUA</h1>
+            <h1>Monitoreo</h1>
             <div class="subheader__rightmenu">
               <ul>
-                <li><a href="#" class="active">Exportación SUA</a></li>
-                <li><a href="idse-ausentismos-incapacidades.html">Ausentismos e Incapacidades</a></li>
+                <li><a href="idse-monitoreo-historico-de-movimientos.html">Histórico de Movimientos</a></li>
+                <li><a href="#" class="active">Monitoreo FTP</a></li>
               </ul>
             </div>
           </div>
@@ -173,97 +173,73 @@
 
         <div class="box inner_container">
           <div class="main_content_wrapper">
-            <div class="hw-col">
-              <h2>Exportación SUA</h2>
+            <div class="fw">
+              <h2>Monitoreo de archivos enviados por FTP</h2>
+              <div class="monitoreo__detail--row">
+                <div>Reporte de los archivos enviados por FTP de los últimos
+                  <span>
+                    <select>
+                      <option>5 días</option>
+                      <option>10 días</option>
+                      <option>15 días</option>
+                      <option>20 días</option>
+                      <option>25 días</option>
+                    </select>
+                  </span>
+                </div>
+                <div>
+                  <button id="" class="main-btn main-btn__green"><img class="excel_icon" src="img/icon-excel.svg">Excel</button>
+                </div>
+              </div>
 
               <div class="content_module_wrapper">
-                <div class="vertical_itm">
-                  <div class="checkbox_container">
- 									 <label class="container_checkbox middle_title">Incluir Ausentismo e Incapacidades
- 										 <input id="" class="ausentismo-incapacidades" type="checkbox">
- 										 <span class="checkmark"></span>
- 									 </label>
+                <!--Tables-->
+                <div class="tables_container tables-monitoreo-ftp">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">Cuenta Masiva</th>
+        					      <th scope="col">Fecha de Procesamiento</th>
+        					      <th scope="col">Nombre del Archivo</th>
+        					      <th scope="col">Estatus</th>
+        								<th scope="col">Movimientos Leídos</th>
+        								<th scope="col">Movimientos Válidos</th>
+        								<th scope="col">Movimientos Enviados</th>
+                        <th scope="col">Lotes Enviados</th>
+                        <th scope="col">Lotes Acuses</th>
+                        <th scope="col">Lotes Respuestas</th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+        								<td data-label="">NOMITEK</td>
+                        <td data-label=""><a class="ver-detalle" href="#">09/11/2020 2:37 PM</a></td>
+                        <td data-label="">095531_MODSAL_Y6050856100_25052021.TXT</td>
+                        <td data-label="">Completo</td>
+                        <td data-label="">3</td>
+                        <td data-label="">3</td>
+                        <td data-label="">3</td>
+                        <td data-label="">1</td>
+                        <td data-label="">1</td>
+        					      <td data-label="">1</td>
+        					    </tr>
+        					    <tr>
+                        <td data-label="">NOMITEK</td>
+                        <td data-label=""><a class="ver-detalle" href="#">09/11/2020 2:37 PM</a></td>
+                        <td data-label="">095531_MODSAL_Y6050856100_25052021.TXT</td>
+                        <td data-label="">Completo</td>
+                        <td data-label="">3</td>
+                        <td data-label="">3</td>
+                        <td data-label="">3</td>
+                        <td data-label="">1</td>
+                        <td data-label="">1</td>
+        					      <td data-label="">1</td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div>
 
-                   <div class="sua__hidden-data sua__ausentismoo-options">
-                     <h2>Exportación SUA</h2>
-                     <div class="dropdown_item">
-                       <div class="select_label">Registro patronal</div>
-                       <select name="select">
-                         <option selected disabled>Seleccionar</option>
-                         <option value="value1">Value 1</option>
-                         <option value="value2">Value 2</option>
-                       </select>
-                     </div>
-                     <div class="dropdown_item">
-                       <div class="select_label">Tipo incidente</div>
-                       <select name="select">
-                         <option selected disabled>Seleccionar</option>
-                         <option value="value1">Value 1</option>
-                         <option value="value2">Value 2</option>
-                       </select>
-                     </div>
-                     <div class="dropdown_item">
-                       <label>Fecha inicial <span>(dd/mm/aaaa)</span>
-                         <input type="text" id="" name="" class="dp__input sua__auycs--dpinicio" placeholder="dd/mm/yyy" />
-                       </label>
-                     </div>
-                     <div class="dropdown_item">
-                       <label>Fecha final <span>(dd/mm/aaaa)</span>
-                         <input type="text" id="" name="" class="dp__input sua__auycs--dpfin" placeholder="dd/mm/yyy" />
-                       </label>
-                     </div>
-                   </div>
-
- 								 </div>
-                </div>
-
-                <div class="vertical_itm">
-                  <div class="checkbox_container">
- 									 <label class="container_checkbox middle_title">Incluir Movimienos Afiliatorios
- 										 <input id="" class="movimientos-afilatorios" type="checkbox">
- 										 <span class="checkmark"></span>
- 									 </label>
-
-                   <div class="sua__hidden-data sua__movimientos-options">
-                     <h2>Movimientos Afiliatorios</h2>
-                     <label class="container_checkbox middle_title">Incluir movimientos rechazados
-   										 <input id="" class="movimientos-rechazados" type="checkbox">
-   										 <span class="checkmark"></span>
-   									 </label>
-                     <div class="dropdown_item">
-                       <div class="select_label">Registro patronal</div>
-                       <select name="select">
-                         <option selected disabled>Seleccionar</option>
-                         <option value="value1">Value 1</option>
-                         <option value="value2">Value 2</option>
-                       </select>
-                     </div>
-                     <div class="dropdown_item">
-                       <div class="select_label">Tipo movimiento</div>
-                       <select name="select">
-                         <option selected disabled>Seleccionar</option>
-                         <option value="value1">Value 1</option>
-                         <option value="value2">Value 2</option>
-                       </select>
-                     </div>
-                     <div class="dropdown_item">
-                       <label>Fecha inicial <span>(dd/mm/aaaa)</span>
-                         <input type="text" id="" name="" class="dp__input sua__moaf--dpinicio" placeholder="dd/mm/yyy"/>
-                       </label>
-                     </div>
-                     <div class="dropdown_item">
-                       <label>Fecha final <span>(dd/mm/aaaa)</span>
-                         <input type="text" id="" name="" class="dp__input sua__moaf--dpfin" placeholder="dd/mm/yyy"/>
-                       </label>
-                     </div>
-                   </div>
-
- 								 </div>
-                </div>
-
-                <div class="vertical_itm">
-                  <button id="" class="main-btn main-btn__orange">Exportación SUA</button>
-                </div>
+                <p class="bottom_line">Para ver el detalle de un archivo de clic en la fecha de procesamiento</p>
 
               </div>
             </div>
@@ -287,6 +263,61 @@
           </div>
         </div>
       </footer>
+    </div>
+
+    <!--MODAL-->
+    <div class="modal fade" id="" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Monitoreo FTP</h2>
+            <button type="button" class="close close_modal" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="monitoreo__detail--row">
+              <h3>Detalle del archivo procesado</h3>
+              <div class="modal_fecha">Fecha 09/11/2020 2:37 PM</div>
+            </div>
+            <div class="form-group">
+              <div class="content_module_wrapper">
+                <!--Tables-->
+                <div class="tables_container tables-monitoreo-modal">
+        					<table>
+        					  <thead>
+        					    <tr>
+                        <th></th>
+        					      <th scope="col">Registro Patronal</th>
+        					      <th scope="col">Movs. Enviados</th>
+        					      <th scope="col">Lote</th>
+        					      <th scope="col">Fecha Envío al IMSS</th>
+        								<th scope="col">Fecha Acuse</th>
+        								<th scope="col">Fecha Respuesta</th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+                        <td data-label="">1</td>
+        								<td data-label="">A836798110</td>
+                        <td data-label="">0</td>
+                        <td data-label="">32134892</td>
+                        <td data-label="">09/11/2020 2:37 PM</td>
+                        <td data-label="">09/11/2020 2:37 PM</td>
+                        <td data-label="">09/11/2020 2:37 PM</td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div>
+
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="" class="main-btn main-btn__orange close_modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
     </div>
 
 
