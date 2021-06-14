@@ -166,7 +166,7 @@ $(function () {
 
 
 //Monitoreo de archivos enviados por FTP
-$('.ver-detalle').click(function(event){
+$('.show-modal').click(function(event){
   event.preventDefault();
   $('body').addClass('modal-open');
   $('.modal').addClass('show');
