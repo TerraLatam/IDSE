@@ -64,6 +64,10 @@ h2
     cursor: pointer
     background-color: transparent
 
+.modal
+  .content_module_wrapper
+    margin: 15px 0
+
 .modal-open
   .modal
     overflow-x: hidden
@@ -95,6 +99,14 @@ h2
 @media (min-width: 992px)
   .modal-lg, .modal-xl
     max-width: 910px
+  .modal-large
+    .modal-lg
+      max-width: 1080px
+
+@media (min-width: 992px)
+  .modal-small
+    .modal-lg
+      max-width: 720px
 
 .modal-dialog
   margin-left: auto
@@ -167,6 +179,10 @@ h2
   .modal-dialog
     width: 90%
 
+.modal
+  .tables_container
+    table th
+      font-size: 1em
 
 
 //SCROLLS
@@ -254,7 +270,7 @@ h2
   &__white
     background-color: transparent
     background-image: linear-gradient(100deg, $lightgrey 50%, $white 50%)
-    border: 1px solid $lightgrey
+    border: 1px solid $grey
     color: $lightfont
 
 .main-btn:hover
@@ -793,7 +809,8 @@ footer
 
 
 @media (max-width: $screen-sm-min-576)
-
+  .modal .main-btn
+    max-width: 100%
 
 @media (max-width: $screen-xsm-min-375)
 

@@ -164,8 +164,8 @@ $(function () {
     });
 });
 
-
-//Monitoreo de archivos enviados por FTP
+/////// MODALES //////
+//MODAL Monitoreo de archivos enviados por FTP
 $('.show-modal').click(function(event){
   event.preventDefault();
   $('body').addClass('modal-open');
@@ -176,4 +176,61 @@ $('.close_modal').click(function(event){
   event.preventDefault();
   $('body').removeClass('modal-open');
   $('.modal').removeClass('show');
+})
+//MODAL Captura - Lotes enviados
+$('.show-modal-lote').click(function(event){
+  event.preventDefault();
+  $('body').addClass('modal-lotes-open');
+  $('.modal_lotes-enviados').addClass('show');
+})
+
+$('.close_modal').click(function(event){
+  event.preventDefault();
+  $('body').removeClass('modal-lotes-open');
+  $('.modal_lotes-enviados').removeClass('show');
+})
+//MODAL Captura - Consultar Acuse
+$('.show-modal-acuse').click(function(event){
+  event.preventDefault();
+  $('body').addClass('modal-acuse-open');
+  $('.modal_consultar-acuse').addClass('show');
+})
+
+$('.close_modal').click(function(event){
+  event.preventDefault();
+  $('body').removeClass('modal-acuse-open');
+  $('.modal_consultar-acuse').removeClass('show');
+})
+//MODAL Captura - Consultar Respuesta
+$('.show-modal-respuesta').click(function(event){
+  event.preventDefault();
+  $('body').addClass('modal-respuesta-open');
+  $('.modal_respuesta').addClass('show');
+})
+
+$('.close_modal').click(function(event){
+  event.preventDefault();
+  $('body').removeClass('modal-respuesta-open');
+  $('.modal_respuesta').removeClass('show');
+})
+
+
+
+//CAPTURA LOTES ENVIADOS  idse-lotes-enviados.html
+//DATEPICKER
+function myDatePicker(){
+  $('#dataPickerMonthly').MonthPicker({
+    Button: false ,
+    MonthFormat: 'M, yy', // Short month name, Full year.
+    AltFormat: 'yy-dd-mm', // ODBC time stamp.
+    IsRTL: true,
+    i18n: {
+      months: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sept", "Oct", "Nov", "Dic"],
+      backTo: "Regresar al",
+      year: "Año",
+    }
+  });
+}
+$('.dataPickerMonthly').focus(function(){
+  myDatePicker();
 })

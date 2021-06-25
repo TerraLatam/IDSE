@@ -1,0 +1,464 @@
+.space__between-row
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  select
+    min-width: 240px
+    border: none
+    color: $black
+    background-color: $lightgrey
+    padding: 8px 12px
+    border-radius: 6px
+    background-image: url(../img/icon-down-arrow.svg)
+    background-position: 95% center
+    background-repeat: no-repeat
+    -webkit-appearance: none
+  .month_selector
+    background-image: url(../img/icon-datepicker.svg)
+  .dataPickerMonthly
+    min-width: 240px
+    border: none
+    color: $black
+    background-color: $lightgrey
+    padding: 8px 12px
+    border-radius: 6px
+    background-image: url(../img/icon-datepicker.svg)
+    background-position: 95% center
+    background-repeat: no-repeat
+    -webkit-appearance: none
+
+.captura__select-label
+  color: $labelcolor
+  font-size: .9em
+  font-weight: 600
+  display: block
+
+//DATAPICKER
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight
+  background-color: $orange
+  color: $white
+
+.ui-icon-circle-triangle-e
+  background-image: url(../img/icon-prev.svg) !important
+  background-repeat: no-repeat
+  background-size: 10px
+  background-position: 50% 50%
+
+.ui-icon-circle-triangle-w
+  background-image: url(../img/icon-next.svg) !important
+  background-repeat: no-repeat
+  background-size: 10px
+  background-position: 50% 50%
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+  background-color: transparent
+
+.ui-icon
+  margin-top: -.5em
+
+.ui-widget-header
+  border: none
+  background: transparent
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+  border: 1px solid $grey
+  background-color: $grey
+
+//PAGINATION
+.nav__pagination
+  display: flex
+  justify-content: center
+
+.pagination
+  list-style: none
+  margin: 0
+  padding: 0
+  display: flex
+
+.pagination
+  li
+    margin: 0 4px
+    a
+      display: block
+      padding: .05em .5em
+      border: none
+      border-radius: .2em
+      text-decoration: none
+      color: $grey
+    a:hover
+      color: $orange
+
+.pagination li:first-child a
+  border: 1px solid #999
+
+.pagination li:last-child a
+  border: 1px solid #999
+
+.visuallyhidden
+  border: 0
+  clip: rect(0 0 0 0)
+  height: auto
+  margin: 0
+  overflow: hidden
+  padding: 0
+  position: absolute
+  width: 1px
+  white-space: nowrap
+
+.pagination
+  a[aria-current="page"]
+    background-color: $orange
+    color: $white
+  a[aria-current="page"]:hover
+    color: $white
+
+.disable_btn
+  pointer-events: none
+  opacity: 0.3
+
+.modal__buttons-container
+  display: flex
+  flex-direction: row
+  align-items: center
+  button
+    img
+      display: inline-block
+      line-height: 1
+      width: 9px
+      margin-right: 5px
+  button:first-child
+    margin-right: 15px
+
+
+//TABLA Lotes enviados
+.tables-lotes-enviados
+  table
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        border-radius: 4px
+        border-bottom: none
+        th:nth-child(1)
+          width: 160px
+          padding-left: 30px
+        th:nth-child(2)
+          width: 210px
+        th:nth-child(3)
+          width: 210px
+        th:nth-child(4)
+          width: 180px
+        th:nth-child(5)
+          width: 185px
+        th:nth-child(6)
+          width: 165px
+        th:nth-child(7)
+          width: 165px
+        th:nth-child(8)
+          width: 165px
+    tbody
+      tr
+        td:nth-child(1)
+          width: 160px
+          padding-left: 30px
+        td:nth-child(2)
+          width: 210px
+        td:nth-child(3)
+          width: 210px
+        td:nth-child(4)
+          width: 180px
+        td:nth-child(5)
+          width: 185px
+        td:nth-child(6)
+          width: 165px
+        td:nth-child(7)
+          width: 165px
+        td:nth-child(8)
+          width: 165px
+
+@media screen and (max-width: 1366px)
+  .tables_container.tables-lotes-enviados
+    overflow-x: auto
+    table
+      width: 1290px
+
+//MODAL
+.modal-lotes-open
+  .modal_lotes-enviados
+    overflow-x: hidden
+    overflow-y: auto
+    display: block
+.modal-title
+  span
+    color: $orange
+.modal-acuse-open
+  .modal_consultar-acuse
+    overflow-x: hidden
+    overflow-y: auto
+    display: block
+.modal-respuesta-open
+  .modal_respuesta
+    overflow-x: hidden
+    overflow-y: auto
+    display: block
+
+
+//TABLA MONITOREO FTP
+.tables_container.tables-lotes-modal
+  overflow-x: auto
+  table
+    width: 1035px
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        th:nth-child(1)
+          width: 210px
+          padding-left: 15px
+        th:nth-child(2)
+          width: 280px
+    tbody
+      tr
+        border: none
+        td
+          padding: .225em
+        td:nth-child(1)
+          width: 210px
+          padding-left: 15px
+        td:nth-child(2)
+          width: 280px
+        td
+          select
+            border: none
+            background-color: $white
+            color: $orange
+            appearance: none
+            background-image: url(../img/icon-down-arrow.svg)
+            background-position: 100% center
+            background-repeat: no-repeat
+            -webkit-appearance: none
+            background-size: 10px
+            padding: 0 18px 0 0
+.tables_container.tables-respuesta-patron
+  table
+    tr
+      td
+        select
+          border: none
+          background-color: $white
+          color: $orange
+          appearance: none
+          background-image: url(../img/icon-down-arrow.svg)
+          background-position: 100% center
+          background-repeat: no-repeat
+          -webkit-appearance: none
+          background-size: 10px
+          padding: 0 18px 0 0
+
+//TABLA DETALLES
+.tables_container.tables-lotes-modal-details
+  overflow-x: auto
+  font-size: .9em
+  table
+    width: 1035px
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        th:nth-child(1)
+          width: 75px
+          padding-left: 15px
+        th:nth-child(2)
+          width: 35px
+          text-align: center
+        th:nth-child(3)
+          width: 100px
+        th:nth-child(4)
+          width: 120px
+        th:nth-child(5)
+          width: 190px
+        th:nth-child(6)
+          width: 95px
+          text-align: center
+        th:nth-child(7)
+          width: 80px
+          text-align: center
+        th:nth-child(8)
+          width: 80px
+          text-align: center
+        th:nth-child(9)
+          width: 100px
+          text-align: center
+        th:nth-child(10)
+          width: 80px
+          text-align: center
+        th:nth-child(11)
+          width: 80px
+          text-align: center
+    tbody
+      tr
+        border: none
+        td
+          padding: .225em
+        td:nth-child(1)
+          width: 75px
+          padding-left: 15px
+        td:nth-child(2)
+          width: 35px
+          text-align: center
+        td:nth-child(3)
+          width: 100px
+        td:nth-child(4)
+          width: 120px
+        td:nth-child(5)
+          width: 190px
+        td:nth-child(6)
+          width: 95px
+          text-align: center
+        td:nth-child(7)
+          width: 80px
+          text-align: center
+        td:nth-child(8)
+          width: 80px
+          text-align: center
+        td:nth-child(9)
+          width: 100px
+          text-align: center
+        td:nth-child(10)
+          width: 80px
+          text-align: center
+        td:nth-child(11)
+          width: 80px
+          text-align: center
+
+
+//TABLA MOODAL ACUSE
+.tables_container.tables-acuse-modal
+  overflow-x: auto
+  font-size: .9em
+  table
+    width: 675px
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        th:nth-child(1)
+          width: 210px
+          padding-left: 15px
+        th:nth-child(2)
+          width: 280px
+    tbody
+      tr
+        border: none
+        td
+          padding: .225em
+        td:nth-child(1)
+          width: 210px
+          padding-left: 15px
+        td:nth-child(2)
+          width: 280px
+
+//TABLA MODAL RESPUESTA PATRON
+.tables_container.tables-respuesta-patron
+  overflow-x: auto
+  font-size: .9em
+  table
+    width: 675px
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        th:nth-child(1)
+          width: 210px
+          padding-left: 15px
+        th:nth-child(2)
+          width: 280px
+    tbody
+      tr
+        border: none
+        td
+          padding: .225em
+        td:nth-child(1)
+          width: 210px
+          padding-left: 15px
+        td:nth-child(2)
+          width: 280px
+
+//TABLA MODAL ACUSE TIPOO MOVIMIENTOS
+.tables_container.tables-acuse-tipo-movimientos
+  overflow-x: auto
+  font-size: .9em
+  table
+    width: 675px
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        th:nth-child(1)
+          width: 400px
+          padding-left: 15px
+        th:nth-child(2)
+          width: 85px
+          text-align: center
+        th:nth-child(3)
+          width: 85px
+          text-align: center
+        th:nth-child(4)
+          width: 85px
+          text-align: center
+    tbody
+      tr
+        border: none
+        td
+          padding: .225em
+        td:nth-child(1)
+          width: 400px
+          padding-left: 15px
+        td:nth-child(2)
+          width: 85px
+          text-align: center
+        td:nth-child(3)
+          width: 85px
+          text-align: center
+        td:nth-child(4)
+          width: 85px
+          text-align: center
+
+
+
+
+//RESPONSIVE
+@media (min-width: $screen-xxl-dsk-1366)
+
+
+@media (max-width: $screen-xxl-dsk-1366)
+
+
+@media (max-width: $screen-xl-min-1210)
+
+
+@media (max-width: $screen-sm-dsk-1180)
+
+
+@media (max-width: $screen-lg-min-992)
+
+
+@media (max-width: $screen-md-min-769)
+
+
+@media (max-width: $screen-sm-min-576)
+  .space__between-row
+    flex-direction: column
+    align-items: flex-start
+    div
+      width: 100%
+    select
+      width: 100%
+  .dataPickerMonthly
+    width: 100%
+
+@media (max-width: $screen-xsm-min-375)
+
+
+@media (max-width: $screen-xxsm-min-321)
