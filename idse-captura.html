@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>IDSE | Captura - Lotes enviados</title>
+    <title>IDSE | Captura</title>
     <meta name="author" content="" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,7 +16,6 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="css/MonthPicker.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -165,8 +164,8 @@
             <h1>Captura</h1>
             <div class="subheader__rightmenu">
               <ul>
-                <li><a href="idse-captura-lotes-enviados.html" class="active">Lotes enviados</a></li>
-                <li><a href="idse-captura.html">Captura</a></li>
+                <li><a href="idse-captura-lotes-enviados.html">Lotes enviados</a></li>
+                <li><a href="idse-captura.html" class="active">Captura</a></li>
                 <li><a href="idse-captura-importacion.html">Importación</a></li>
                 <li><a href="idse-captura-envios.html">Envío</a></li>
               </ul>
@@ -176,147 +175,185 @@
 
         <div class="box inner_container">
           <div class="main_content_wrapper">
-            <div class="fw">
-              <div class="space__between-row">
-                <div>
-                  <span class="captura__select-label">RPs ASOCIADOS</span>
-                  <select name="select">
-                    <option value="value1" selected>0606066910</option>
-                    <option value="value2">0606066910</option>
-                    <option value="value3">0606066910</option>
-                    <option value="value3">0606066910</option>
-                    <option value="value3">0606066910</option>
-                  </select>
-                </div>
-                <div class="month_picker_content">
-                  <span class="captura__select-label">MES</span>
-                  <input id="dataPickerMonthly" class="dataPickerMonthly" type="text" placeholder="Mes"/>
-                </div>
-              </div>
 
+            <div class="fw">
+              <div class="content_module_wrapper flex-col-2">
+
+                <div class="hw-col-49">
+                  <div class="dropdown_item">
+                    <div class="select_label">Registro patronal</div>
+                    <select name="select">
+                      <option selected disabled>Seleccionar</option>
+                      <option value="value1">Value 1</option>
+                      <option value="value2">Value 2</option>
+                    </select>
+                  </div>
+                  <div class="dropdown_item">
+                    <div class="select_label">Tipo de Movimiento</div>
+                    <select name="select">
+                      <option selected disabled>Seleccionar</option>
+                      <option value="value1">Value 1</option>
+                      <option value="value2">Value 2</option>
+                    </select>
+                  </div>
+                  <div class="dropdown_item">
+                    <label>NSS
+                      <input type="text" id="" name="" class="" placeholder="Ingresar" />
+                    </label>
+                  </div>
+                  <div class="dropdown_item">
+                    <label>CURP
+                      <input type="text" id="" name="" class="" placeholder="Ingresar" />
+                    </label>
+                  </div>
+                  <div class="dropdown_item">
+                    <label>Apellido Paterno
+                      <input type="text" id="" name="" class="" placeholder="Ingresar" />
+                    </label>
+                  </div>
+                  <div class="dropdown_item">
+                    <label>Apellido Materno
+                      <input type="text" id="" name="" class="" placeholder="Ingresar" />
+                    </label>
+                  </div>
+                  <div class="dropdown_item">
+                    <label>Nombre
+                      <input type="text" id="" name="" class="" placeholder="Ingresar" />
+                    </label>
+                  </div>
+                  <div class="dropdown_item">
+                    <label>SALARIO DIARIO INT.  (No aplica en bajas)
+                      <input type="text" id="" name="" class="" placeholder="Ingresar" />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="hw-col-49">
+                  <div class="dropdown_item">
+                    <div class="select_label">TIPO DE SALARIO  (No aplica en bajas)</div>
+                    <select name="select">
+                      <option selected disabled>Seleccionar</option>
+                      <option value="value1">Value 1</option>
+                      <option value="value2">Value 2</option>
+                    </select>
+                  </div>
+                  <div class="dropdown_item">
+                    <div class="select_label">CAUSA DE BAJA  (No aplica en reing. ni mod.)</div>
+                    <select name="select">
+                      <option selected disabled>Seleccionar</option>
+                      <option value="value1">Value 1</option>
+                      <option value="value2">Value 2</option>
+                    </select>
+                  </div>
+                  <div class="dropdown_item">
+                    <div class="select_label">SEMANA REDUCIDA  (No aplica en bajas)</div>
+                    <select name="select">
+                      <option selected disabled>Seleccionar</option>
+                      <option value="value1">Value 1</option>
+                      <option value="value2">Value 2</option>
+                    </select>
+                  </div>
+                  <div class="dropdown_item">
+                    <div class="select_label">TIPO DE TRABAJADOR  (No aplica en bajas)</div>
+                    <select name="select">
+                      <option selected disabled>Seleccionar</option>
+                      <option value="value1">Value 1</option>
+                      <option value="value2">Value 2</option>
+                    </select>
+                  </div>
+                  <div class="dropdown_item">
+                    <label>CLAVE TRABAJADOR  (Opcional)
+                      <input type="text" id="" name="" class="" placeholder="Ingresar" />
+                    </label>
+                  </div>
+                  <div class="dropdown_item">
+                    <label>UNIDAD MÉDICA  (No aplica en bajas ni mod.)
+                      <input type="text" id="" name="" class="" placeholder="Ingresar" />
+                    </label>
+                  </div>
+                  <div class="dropdown_item">
+                    <label>Fecha de movimiento <span>(dd/mm/aaaa)</span>
+                      <input type="text" id="" name="" class="dp__input dp__input--simple" placeholder="dd/mm/yyy" />
+                    </label>
+                  </div>
+                  <div class="dropdown_item double_btns">
+                    <div class="vertical_itm">
+                      <button id="" class="main-btn main-btn__orange">Agregar</button>
+                    </div>
+                    <div class="vertical_itm">
+                      <button id="" class="main-btn main-btn__white">Nuevo</button>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="fw">
               <div class="content_module_wrapper">
                 <!--Tables-->
-                <div class="tables_container tables-lotes-enviados">
+                <div class="tables_container tables-captura-section">
         					<table>
         					  <thead>
         					    <tr>
-        					      <th scope="col">Lote</th>
-        					      <th scope="col">Reg. Pat.</th>
-        					      <th scope="col">Tipo</th>
-        					      <th scope="col">Fecha</th>
-        								<th scope="col">Acuse</th>
-        								<th scope="col">Respuesta</th>
-        								<th scope="col">Estatus</th>
+        					      <th scope="col">No.</th>
+        					      <th scope="col">Reg. Patronal</th>
+        					      <th scope="col">Tipo Mov.</th>
+        					      <th scope="col">NSS</th>
+        								<th scope="col">CURP</th>
+        								<th scope="col">Nombre</th>
+        								<th scope="col">A. Paterno</th>
+                        <th scope="col">A. Materno</th>
+                        <th scope="col">Tipo Sal.</th>
+                        <th scope="col">SDI</th>
+                        <th scope="col">Fecha</th>
         					    </tr>
         					  </thead>
         					  <tbody>
         					    <tr>
-        								<td data-label=""><a class="ver-detalle show-modal-lote" href="#">276751867</a></td>
+        								<td data-label="">276751867</td>
         					      <td data-label="">Y681534310</td>
         					      <td data-label="">Individual</td>
-        					      <td data-label="">24/Ago/2020 14:26</td>
-                        <td data-label=""><a class="ver-detalle show-modal-acuse" href="#">Consultar</a></td>
-                        <td data-label=""><a class="ver-detalle show-modal-respuesta" href="#">Consultar</a></td>
-        								<td data-label="">Procesado</td>
+        					      <td data-label="">4234234324</td>
+                        <td data-label="">34F43HJJHJ42</td>
+                        <td data-label="">Brayam Omar</td>
+        								<td data-label="">Morando</td>
+                        <td data-label="">Pérez</td>
+                        <td data-label="">Ninguno</td>
+                        <td data-label="">999</td>
+                        <td data-label="">30/Nov/2020</td>
         					    </tr>
-        					    <tr>
-                        <td data-label=""><a class="ver-detalle show-modal-lote" href="#">276751867</a></td>
+                      <tr>
+        								<td data-label="">276751867</td>
         					      <td data-label="">Y681534310</td>
         					      <td data-label="">Individual</td>
-        					      <td data-label="">24/Ago/2020 14:26</td>
-                        <td data-label=""><a class="ver-detalle show-modal-acuse" href="#">Consultar</a></td>
-                        <td data-label=""><a class="ver-detalle show-modal-respuesta" href="#">Consultar</a></td>
-        								<td data-label="">Procesado</td>
+        					      <td data-label="">4234234324</td>
+                        <td data-label="">34F43HJJHJ42</td>
+                        <td data-label="">Brayam Omar</td>
+        								<td data-label="">Morando</td>
+                        <td data-label="">Pérez</td>
+                        <td data-label="">Ninguno</td>
+                        <td data-label="">999</td>
+                        <td data-label="">30/Nov/2020</td>
         					    </tr>
-        					    <tr>
-                        <td data-label=""><a class="ver-detalle show-modal-lote" href="#">276751867</a></td>
+                      <tr>
+        								<td data-label="">276751867</td>
         					      <td data-label="">Y681534310</td>
         					      <td data-label="">Individual</td>
-        					      <td data-label="">24/Ago/2020 14:26</td>
-                        <td data-label=""><a class="ver-detalle show-modal-acuse" href="#">Consultar</a></td>
-                        <td data-label=""><a class="ver-detalle show-modal-respuesta" href="#">Consultar</a></td>
-        								<td data-label="">Procesado</td>
-        					    </tr>
-        					    <tr>
-                        <td data-label=""><a class="ver-detalle show-modal-lote" href="#">276751867</a></td>
-        					      <td data-label="">Y681534310</td>
-        					      <td data-label="">Individual</td>
-        					      <td data-label="">24/Ago/2020 14:26</td>
-                        <td data-label=""><a class="ver-detalle show-modal-acuse" href="#">Consultar</a></td>
-                        <td data-label=""><a class="ver-detalle show-modal-respuesta" href="#">Consultar</a></td>
-        								<td data-label="">Procesado</td>
-        					    </tr>
-        							<tr>
-                        <td data-label=""><a class="ver-detalle show-modal-lote" href="#">276751867</a></td>
-        					      <td data-label="">Y681534310</td>
-        					      <td data-label="">Individual</td>
-        					      <td data-label="">24/Ago/2020 14:26</td>
-                        <td data-label=""><a class="ver-detalle show-modal-acuse" href="#">Consultar</a></td>
-                        <td data-label=""><a class="ver-detalle show-modal-respuesta" href="#">Consultar</a></td>
-        								<td data-label="">Procesado</td>
-        					    </tr>
-        					    <tr>
-                        <td data-label=""><a class="ver-detalle show-modal-lote" href="#">276751867</a></td>
-        					      <td data-label="">Y681534310</td>
-        					      <td data-label="">Individual</td>
-        					      <td data-label="">24/Ago/2020 14:26</td>
-                        <td data-label=""><a class="ver-detalle show-modal-acuse" href="#">Consultar</a></td>
-                        <td data-label=""><a class="ver-detalle show-modal-respuesta" href="#">Consultar</a></td>
-        								<td data-label="">Procesado</td>
-        					    </tr>
-        					    <tr>
-                        <td data-label=""><a class="ver-detalle show-modal-lote" href="#">276751867</a></td>
-        					      <td data-label="">Y681534310</td>
-        					      <td data-label="">Individual</td>
-        					      <td data-label="">24/Ago/2020 14:26</td>
-                        <td data-label=""><a class="ver-detalle show-modal-acuse" href="#">Consultar</a></td>
-                        <td data-label=""><a class="ver-detalle show-modal-respuesta" href="#">Consultar</a></td>
-        								<td data-label="">Procesado</td>
-        					    </tr>
-        					    <tr>
-                        <td data-label=""><a class="ver-detalle show-modal-lote" href="#">276751867</a></td>
-        					      <td data-label="">Y681534310</td>
-        					      <td data-label="">Individual</td>
-        					      <td data-label="">24/Ago/2020 14:26</td>
-                        <td data-label=""><a class="ver-detalle show-modal-acuse" href="#">Consultar</a></td>
-                        <td data-label=""><a class="ver-detalle show-modal-respuesta" href="#">Consultar</a></td>
-        								<td data-label="">Procesado</td>
-        					    </tr>
-        							<tr>
-                        <td data-label=""><a class="ver-detalle show-modal-lote" href="#">276751867</a></td>
-        					      <td data-label="">Y681534310</td>
-        					      <td data-label="">Individual</td>
-        					      <td data-label="">24/Ago/2020 14:26</td>
-                        <td data-label=""><a class="ver-detalle show-modal-acuse" href="#">Consultar</a></td>
-                        <td data-label=""><a class="ver-detalle show-modal-respuesta" href="#">Consultar</a></td>
-        								<td data-label="">Procesado</td>
-        					    </tr>
-        					    <tr>
-                        <td data-label=""><a class="ver-detalle show-modal-lote" href="#">276751867</a></td>
-        					      <td data-label="">Y681534310</td>
-        					      <td data-label="">Individual</td>
-        					      <td data-label="">24/Ago/2020 14:26</td>
-                        <td data-label=""><a class="ver-detalle show-modal-acuse" href="#">Consultar</a></td>
-                        <td data-label=""><a class="ver-detalle show-modal-respuesta" href="#">Consultar</a></td>
-        								<td data-label="">Procesado</td>
+        					      <td data-label="">4234234324</td>
+                        <td data-label="">34F43HJJHJ42</td>
+                        <td data-label="">Brayam Omar</td>
+        								<td data-label="">Morando</td>
+                        <td data-label="">Pérez</td>
+                        <td data-label="">Ninguno</td>
+                        <td data-label="">999</td>
+                        <td data-label="">30/Nov/2020</td>
         					    </tr>
         					  </tbody>
         					</table>
         				</div>
-
-                <!--PAGINADOR-->
-                <nav class="nav__pagination" aria-label="pagination">
-                    <ul class="pagination">
-                      <!--Agregar clase .disable_btn para deshabilitar botones-->
-                      <!--Agregar aria-current="page" para indicar la página actual-->
-                        <li><a href="#" class="disable_btn"><span aria-hidden="true">Anterior</span></a></li>
-                        <li><a href="#" aria-current="page">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">...</a></li>
-                        <li><a href="#">10</a></li>
-                        <li><a href="#"><span aria-hidden="true">Siguiente</span></a></li>
-                    </ul>
-                </nav>
 
               </div>
             </div>
@@ -394,7 +431,7 @@
         				</div><!--// Termina Tables Movimientos Afiliatorios-Lote -->
 
                 <!--Tables Movimientos Afiliatorios - Detalle -->
-                <div class="tables_container tables-lotes-modal tables-lotes-modal-middle">
+                <div class="tables_container tables-lotes-modal">
         					<table>
         					  <thead>
         					    <tr>
@@ -732,7 +769,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
-    <script src="js/MonthPicker.js"></script>
     <script src="js/CustomEase.min.js"></script>
     <script src="js/main.js"></script>
   </body>

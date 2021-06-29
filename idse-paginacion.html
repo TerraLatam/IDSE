@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>IDSE | Captura - Importación</title>
+    <title>IDSE | Ejemplo paginación</title>
     <meta name="author" content="" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,6 +16,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/MonthPicker.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -118,10 +119,10 @@
               <ul>
                 <li class="li-w-sm"><a class="has-submenu" href="">Captura</a>
                   <ul>
-                    <li><a href="idse-captura-lotes-enviados.html">Lotes enviados</a></li>
+                    <li><a class="submenu-active"href="idse-lotes-enviados.html" >Lotes enviados</a></li>
                     <li><a href="">Captura</a></li>
-                    <li><a href="idse-captura-importacion.html">Importación</a></li>
-                    <li><a href="idse-captura-envios.html">Envío</a></li>
+                    <li><a href="">Importación</a></li>
+                    <li><a href="">Envío</a></li>
                   </ul>
                 </li>
                 <li class="li-w-sm"><a class="has-submenu" href="">Confronta</a>
@@ -140,14 +141,14 @@
                 <li><a href="idse-subsidiarias.html">Subsidiarias</a></li>
                 <li class="li-w-sm"><a class="has-submenu" href="idse-monitoreo-historico-de-movimientos.html">Monitoreo</a>
                   <ul>
-                    <li><a href="idse-monitoreo-historico-de-movimientos.html" class="active">Histórico de Movimientos</a></li>
+                    <li><a href="idse-monitoreo-historico-de-movimientos.html">Histórico de Movimientos</a></li>
                     <li><a href="idse-monitoreo-ftp.html">Monitoreo FTP</a></li>
                   </ul>
                 </li>
                 <li class="li-w-sm"><a class="has-submenu" href="idse-exportacion-sua-inicial.html">Exportación SUA</a>
                   <ul>
                     <li><a href="idse-exportacion-sua-inicial.html">Exportación SUA</a></li>
-                    <li><a class="submenu-active" href="idse-ausentismos-incapacidades.html">Ausentismos e Incapacidades</a></li>
+                    <li><a href="idse-ausentismos-incapacidades.html">Ausentismos e Incapacidades</a></li>
                   </ul>
                 </li>
                 <li><a href="">Respuestas masivas</a></li>
@@ -159,42 +160,145 @@
 
 
       <main role="main" class="main__content fw">
-        <div class="fw bg__lightgrey">
-          <div class="subheader box inner_container">
-            <h1>Captura</h1>
-            <div class="subheader__rightmenu">
-              <ul>
-                <li><a href="idse-captura-lotes-enviados.html">Lotes enviados</a></li>
-                <li><a href="idse-captura.html">Captura</a></li>
-                <li><a href="idse-captura-importacion.html" class="active">Importación</a></li>
-                <li><a href="idse-captura-envios.html">Envío</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
 
         <div class="box inner_container">
           <div class="main_content_wrapper">
-            <div class="hw-col">
-              <p>Si desea consultar el formato requerido del archivo a importar, haga <a href="#">clic aquí.</a></p>
+            <div class="fw">
 
-              <div class="content_module_wrapper_ captura_importacion">
+              <div class="content_module_wrapper">
 
-                <div class="vertical_itm">
-                  <div class="checkbox_container">
-                   <div class="sua__archivos-options">
-                     <div class="dropdown_item">
-                       <label>Archivo
-                         <input type="file" id="" name="" class="file_type" placeholder="Seleccionar" />
-                       </label>
-                       <div class="delete_file"><a id="clear" href="#">X Eliminar archivo</a></div>
-                     </div>
-                   </div>
- 								 </div>
-                 <div class="vertical_itm">
-                   <button id="" class="main-btn main-btn__orange">Subir</button>
-                 </div>
-                </div>
+                <!--PAGINADOR-->
+                <nav class="nav__pagination" aria-label="pagination">
+                    <ul class="pagination">
+                      <!--Agregar clase .disable_btn para deshabilitar botones-->
+                      <!--Agregar aria-current="page" para indicar la página actual-->
+                        <li><a href="#" class="disable_btn"><span aria-hidden="true">Anterior</span></a></li>
+                        <li><a href="#" aria-current="page">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#"><span aria-hidden="true">Siguiente</span></a></li>
+                    </ul>
+                </nav>
+                <br><br>
+
+                <nav class="nav__pagination" aria-label="pagination">
+                    <ul class="pagination">
+                        <li><a href="#"><span aria-hidden="true">Anterior</span></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#" aria-current="page">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#"><span aria-hidden="true">Siguiente</span></a></li>
+                    </ul>
+                </nav>
+                <br><br>
+
+                <nav class="nav__pagination" aria-label="pagination">
+                    <ul class="pagination">
+                        <li><a href="#"><span aria-hidden="true">Anterior</span></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#" aria-current="page">3</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#"><span aria-hidden="true">Siguiente</span></a></li>
+                    </ul>
+                </nav>
+                <br><br>
+
+                <nav class="nav__pagination" aria-label="pagination">
+                    <ul class="pagination">
+                        <li><a href="#"><span aria-hidden="true">Anterior</span></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#" aria-current="page">4</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#"><span aria-hidden="true">Siguiente</span></a></li>
+                    </ul>
+                </nav>
+                <br><br>
+
+                <nav class="nav__pagination" aria-label="pagination">
+                    <ul class="pagination">
+                        <li><a href="#"><span aria-hidden="true">Anterior</span></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#" aria-current="page">5</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#"><span aria-hidden="true">Siguiente</span></a></li>
+                    </ul>
+                </nav>
+                <br><br>
+
+                <nav class="nav__pagination" aria-label="pagination">
+                    <ul class="pagination">
+                        <li><a href="#"><span aria-hidden="true">Anterior</span></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#" aria-current="page">6</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#"><span aria-hidden="true">Siguiente</span></a></li>
+                    </ul>
+                </nav>
+                <br><br>
+
+                <nav class="nav__pagination" aria-label="pagination">
+                    <ul class="pagination">
+                        <li><a href="#"><span aria-hidden="true">Anterior</span></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#" aria-current="page">7</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#"><span aria-hidden="true">Siguiente</span></a></li>
+                    </ul>
+                </nav>
+                <br><br>
+
+                <nav class="nav__pagination" aria-label="pagination">
+                    <ul class="pagination">
+                        <li><a href="#"><span aria-hidden="true">Anterior</span></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#" aria-current="page">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#"><span aria-hidden="true">Siguiente</span></a></li>
+                    </ul>
+                </nav>
+                <br><br>
+
+                <nav class="nav__pagination" aria-label="pagination">
+                    <ul class="pagination">
+                        <li><a href="#"><span aria-hidden="true">Anterior</span></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#" aria-current="page">9</a></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#"><span aria-hidden="true">Siguiente</span></a></li>
+                    </ul>
+                </nav>
+                <br><br>
+
+                <nav class="nav__pagination" aria-label="pagination">
+                    <ul class="pagination">
+                        <li><a href="#"><span aria-hidden="true">Anterior</span></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#" aria-current="page">10</a></li>
+                        <li><a href="#" class="disable_btn"><span aria-hidden="true">Siguiente</span></a></li>
+                    </ul>
+                </nav>
+                <br><br>
 
               </div>
             </div>
@@ -221,10 +325,12 @@
     </div>
 
 
+
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
+    <script src="js/MonthPicker.js"></script>
     <script src="js/CustomEase.min.js"></script>
     <script src="js/main.js"></script>
   </body>

@@ -49,6 +49,17 @@ a
 .vertical_itm
   margin: 20px 0
 
+.flex-col-2
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  justify-content: space-between
+  margin-top: 0
+  margin-bottom: 70px
+
+.hw-col-49
+  width: 48%
+
 //MODALES
 .modal
   position: fixed
@@ -814,6 +825,11 @@ footer
 @media (max-width: $screen-sm-min-576)
   .modal .main-btn
     max-width: 100%
+  .flex-col-2
+    flex-direction: column
+
+  .hw-col-49
+    width: 100%
 
 @media (max-width: $screen-xsm-min-375)
 
