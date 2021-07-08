@@ -33,6 +33,13 @@
 .main_content_wrapper
   padding: 60px 0
 
+h1
+  span
+    color: $orange
+    text-transform: uppercase
+    font-size: 13px
+    font-weight: 600
+
 h2
   font-weight: 400
   font-size: 1.7em
@@ -42,12 +49,16 @@ a
 
 .content_module_wrapper
   position: relative
-  margin: 30px 0
+  margin: 20px 0
   display: flex
   flex-direction: column
 
 .vertical_itm
   margin: 20px 0
+
+.flex-col-1
+  .hw-col-49
+    margin: auto
 
 .flex-col-2
   display: flex
@@ -293,6 +304,9 @@ a
 main
   .main-btn
     max-width: 300px
+  button.fw_btn
+    max-width: 100%
+    width: 100%
 
 .modal
   .main-btn
@@ -830,6 +844,10 @@ footer
 
   .hw-col-49
     width: 100%
+
+  .main_content_wrapper
+    padding: 20px 0
+
 
 @media (max-width: $screen-xsm-min-375)
 

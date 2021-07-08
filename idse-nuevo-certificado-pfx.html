@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>IDSE | Nuevo certificado PFX</title>
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Resource-type" content="Document" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png"/>
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="fw">
+
+      <header role="header" class="fw">
+        <div class="box inner_container header__top--maincontainer bg__white flex-row-space-between">
+          <div class="header__top--logo"> <a href="index.html"><img class="header__top--image" src="img/logo-idse.svg" alt="logo IDSE" role="img"></a></div>
+          <div class="header__top--maintopnavigation">
+
+            <!--Icon/button documents list móvil-->
+            <div class="document__mobil-icon mobile-icon bg__white"><img src="img/icon-entry.svg"></div>
+
+            <!--Icon/button user móvil-->
+            <div class="user__mobil-icon mobile-icon bg__grey"><img src="img/icon-user.svg"></div>
+
+            <!--Menú móvil-->
+      			<div id="mobile_menu" class="mobile_menu">
+      				<div class="burguer_menu">
+      					<button aria-label="Menu" class="baseBurguer">
+      						<span class="baseBurguer_icon">
+      							<span class="baseBurguer_line"></span>
+      							<span class="baseBurguer_line"></span>
+      							<span class="baseBurguer_line"></span>
+      						</span>
+      					</button>
+      				</div>
+      			</div>
+
+            <!--Header Dropdown List-->
+            <div class="header__top--module header__top--dropdown">
+              <div class="header__top--dropdown-btn">
+                <div class="header__top--dropdown-content">
+                  <div class="header-wrapper">
+                    <img src="img/icon-entry.svg"><span id="" class="document-name">Apex2016 - 0606066910</span>
+                  </div>
+                  <div class="header__top--documents-detail">
+                    <ul>
+                      <li>Apex2016 - 0606066910</li>
+                      <li>Apex2016 - 0606066910</li>
+                      <li>E2359383106 - E235938310</li>
+                      <li>Apex2016 - 0606066910</li>
+                      <li>E2359383106 - E235938310</li>
+                      <li>Apex2016 - 0606066910</li>
+                      <li>Apex2016 - 0606066910</li>
+                      <li>Apex2016 - 0606066910</li>
+                      <li>E2359383106 - E235938310</li>
+                      <li>Apex2016 - 0606066910</li>
+                      <li>Apex2016 - 0606066910</li>
+                      <li>Apex2016 - 0606066910</li>
+                      <li>Apex2016 - 0606066910</li>
+                    </ul>
+                    <div class="btn_container">
+                      <button id="" class="main-btn main-btn__orange">Nuevo certificado</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Header User Info-->
+            <div class="header__top--module header__top--container">
+              <div class="header__top--user-name">
+                <div class="header__top--user-name-content">
+                  <div class="header-wrapper">
+                    <img src="img/icon-user.svg"><span id="" class="display-name">Minerva Gutierrez</span>
+                  </div>
+                  <div class="header__top--user-detail">
+                    <div class="inline-container">
+                      <div>Usuario </div>
+                      <div>marayaidse</div>
+                    </div>
+                    <div class="inline-container">
+                      <div>Consumo </div>
+                      <div>
+                        <div>
+                          <progress id="" class="barra-de-consumo" max="100" value="80">  </progress>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inline-container">
+                      <div>Último acceso </div>
+                      <div>15/09/2020 08:12 hrs</div>
+                    </div>
+                    <div class="">
+                      <button id="" class="main-btn main-btn__orange">Cerrar sesión</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Header bottom menu-->
+        <div class="header__bottom--maincontainer bg__orange fw w-100">
+          <div class="box inner_container">
+            <nav class="header__bottom--mainnavigation">
+              <ul>
+                <li class="li-w-sm"><a class="has-submenu" href="">Captura</a>
+                  <ul>
+                    <li><a href="idse-lotes-enviados.html" >Lotes enviados</a></li>
+                    <li><a href="">Captura</a></li>
+                    <li><a href="">Importación</a></li>
+                    <li><a href="">Envío</a></li>
+                  </ul>
+                </li>
+                <li class="li-w-sm"><a class="has-submenu" href="">Confronta</a>
+                  <ul>
+                    <li><a href="idse-confronta-basica.html">Básica</a></li>
+                    <li><a href="idse-confronta-premium.html">Premium</a></li>
+                  </ul>
+                </li>
+                <li class="li-w-sm"><a class="has-submenu" href="">Emisión</a>
+                  <ul>
+                    <li><a href="">Listado de emisiones</a></li>
+                    <li><a href="">Detalle de emisiones</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Consultas</a></li>
+                <li><a href="idse-subsidiarias.html">Subsidiarias</a></li>
+                <li class="li-w-sm"><a class="has-submenu" href="idse-monitoreo-historico-de-movimientos.html">Monitoreo</a>
+                  <ul>
+                    <li><a href="idse-monitoreo-historico-de-movimientos.html">Histórico de Movimientos</a></li>
+                    <li><a href="idse-monitoreo-ftp.html">Monitoreo FTP</a></li>
+                  </ul>
+                </li>
+                <li class="li-w-sm"><a class="has-submenu" href="idse-exportacion-sua-inicial.html">Exportación SUA</a>
+                  <ul>
+                    <li><a href="idse-exportacion-sua-inicial.html">Exportación SUA</a></li>
+                    <li><a href="idse-ausentismos-incapacidades.html">Ausentismos e Incapacidades</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Respuestas masivas</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+
+      <main role="main" class="main__content fw">
+        <div class="fw bg__lightgrey">
+          <div class="subheader box inner_container">
+            <h1>Nuevo certificado</h1>
+            <div class="subheader__rightmenu">
+              <ul>
+                <li><a href="idse-nuevo-certificado-pfx.html" class="active">Certificado PFX</a></li>
+                <li><a href="idse-nuevo-certificado-fiel.html">Certificado Fiel</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="box inner_container">
+          <div class="main_content_wrapper">
+
+            <div class="fw">
+              <div class="content_module_wrapper flex-col-1">
+
+                <div class="hw-col-49">
+                  <h2>Nuevo certificado PFX</h2>
+                  <div class="dropdown_item">
+                    <label>Cuenta
+                      <input type="text" id="" name="" class="" placeholder="Ingresar" />
+                    </label>
+                  </div>
+                  <div class="dropdown_item">
+                    <label>Contraseña
+                      <input type="password" id="" name="" class="password" placeholder="Ingresar" />
+                    </label>
+                  </div>
+                  <div class="dropdown_item">
+                    <div class="checkbox_container">
+   									 <label class="container_checkbox middle_title">Guardar contraseña
+   										 <input type="checkbox" checked="checked">
+   										 <span class="checkmark"></span>
+   									 </label>
+   								 </div>
+                  </div>
+                  <div class="dropdown_item">
+                    <label>Certificado .PFX
+                      <input type="file" id="" name="" class="file_type" placeholder="Seleccionar" />
+                    </label>
+                    <div class="delete_file"><a id="clear" href="#">X Eliminar archivo</a></div>
+                  </div>
+                  <div class="dropdown_item">
+                    <div class="checkbox_container">
+   									 <label class="container_checkbox middle_title">Guardar certificado
+   										 <input type="checkbox">
+   										 <span class="checkmark"></span>
+   									 </label>
+   								 </div>
+                  </div>
+                  <div class="dropdown_item">
+                    <div class="vertical_itm">
+                      <button id="" class="main-btn main-btn__orange fw_btn">Agregar</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </main>
+
+
+      <footer role="footer" class="fw">
+        <div class="box inner_container footer__container">
+          <div class="footer__grey bg__grey">
+            <p><strong>Info de interés</strong></p>
+            <p class="hide-on-mobile"> | </p>
+            <p>Soporte: <span> <a href="tel:8009171717">800 9171717</a></span></p>
+            <p><a href="#">Aviso Legal</a></p>
+          </div>
+          <div class="footer__orange">
+            <div><img src="img/logo-terra.svg"></div>
+            <p>© Copyright 2020. <br>Terra Networks México</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!--MODAL LOTES ENVIADOS POR NÚMERO-->
+    <div class="modal fade modal_lotes-enviados modal-large" id="" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Lote No. <span>276751867</span></h2>
+            <button type="button" class="close close_modal" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <div class="content_module_wrapper">
+                <!--Tables Movimientos Afiliatorios-Lote -->
+                <div class="tables_container tables-lotes-modal">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">Movimientos Afiliatorios</th>
+        					      <th scope="col">Lote</th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+                        <td data-label="">Lote</td>
+        								<td data-label="">276751867</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Estatus del lote</td>
+        								<td data-label="">Procesado</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Tipo de Lote</td>
+        								<td data-label="">Individual</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Registro patronal</td>
+        								<td data-label="">Y681534310</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Nombre</td>
+        								<td data-label="">MA SOCORRO ALVAREZ MOSQUERA</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Fecha de transacción</td>
+        								<td data-label="">24/Ago/2020</td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div><!--// Termina Tables Movimientos Afiliatorios-Lote -->
+
+                <!--Tables Movimientos Afiliatorios - Detalle -->
+                <div class="tables_container tables-lotes-modal">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">Movimientos Afiliatorios</th>
+        					      <th scope="col">Detalle</th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+                        <td data-label="">Registro patronal</td>
+        								<td data-label="">
+                          <select>
+                            <option>YG681534310</option>
+                            <option>YG681534311</option>
+                            <option>YG681534312</option>
+                          </select>
+                        </td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Nombre</td>
+        								<td data-label="">XXXXXXX XXXXXXX</td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div><!--// Movimientos Afiliatorios - Detalle -->
+
+                <!--Tables -->
+                <div class="tables_container tables-lotes-modal-details">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">Tipo Mov</th>
+        					      <th scope="col">Ext</th>
+                        <th scope="col">NSS</th>
+                        <th scope="col">CURP</th>
+                        <th scope="col">Nombre del asegurado</th>
+                        <th scope="col">Fecha Mov</th>
+                        <th scope="col">Tipo Trab</th>
+                        <th scope="col">Clave Trab</th>
+                        <th scope="col">Sem / Jorn Red</th>
+                        <th scope="col">Tipo salario</th>
+                        <th scope="col">SDI</th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+                        <td data-label="">2</td>
+        								<td data-label="">0</td>
+                        <td data-label="">02208867651</td>
+                        <td data-label="">0220DAJKQKJ54</td>
+                        <td data-label="">AVAN PEREZ FRANCISCO</td>
+                        <td data-label="">22/Ago/20</td>
+                        <td data-label="">0</td>
+                        <td data-label="">0</td>
+                        <td data-label="">0</td>
+                        <td data-label="">0</td>
+                        <td data-label="">0</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">2</td>
+        								<td data-label="">0</td>
+                        <td data-label="">02208867651</td>
+                        <td data-label="">0220DAJKQKJ54</td>
+                        <td data-label="">PALACIOS CABRERA</td>
+                        <td data-label="">22/Ago/20</td>
+                        <td data-label="">0</td>
+                        <td data-label="">0</td>
+                        <td data-label="">0</td>
+                        <td data-label="">0</td>
+                        <td data-label="">0</td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div><!--// Movimientos Afiliatorios - Detalle -->
+
+                <div class="modal__buttons-container">
+                  <button class="main-btn main-btn__white print_button" type="button"><img src="img/icon-print.svg">Imprimir</button>
+                  <button class="main-btn main-btn__white export_button" type="button"><img src="img/icon-export.svg">Exportar a PDF</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="" class="main-btn main-btn__orange close_modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- // TERMINA MODAL LOTES ENVIADOS POR NÚMERO-->
+
+    <!--MODAL CONSULTAR ACUSE-->
+    <div class="modal fade modal_consultar-acuse modal-small" id="" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Acuse</h2>
+            <button type="button" class="close close_modal" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <div class="content_module_wrapper">
+                <!--Tables Movimientos Afiliatorios-Acuse -->
+                <div class="tables_container tables-acuse-modal">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">Movimientos Afiliatorios</th>
+        					      <th scope="col"></th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+                        <td data-label="">Lote</td>
+        								<td data-label="">276751867</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Registro patronal</td>
+        								<td data-label="">Y681534310</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Nombre</td>
+        								<td data-label="">MA SOCORRO ALVAREZ MOSQUERA</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Tipo de lote</td>
+        								<td data-label="">Individual</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Fecha de transacción</td>
+        								<td data-label="">24/Ago/2020 14:26</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Fecha de acuse de recibo</td>
+        								<td data-label="">24/Ago/2020 14:26</td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div><!--// Termina Tables Movimientos Afiliatorios-Acuse -->
+
+                <!--Tables Tipo de Movimientos-->
+                <div class="tables_container tables-acuse-tipo-movimientos">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">Tipo de Movimiento</th>
+        					      <th scope="col">Total</th>
+                        <th scope="col">Error</th>
+                        <th scope="col">Aceptados</th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+                        <td data-label="">Baja</td>
+        								<td data-label="">2</td>
+                        <td data-label="">0</td>
+                        <td data-label="">2</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Modificación</td>
+        								<td data-label="">2</td>
+                        <td data-label="">0</td>
+                        <td data-label="">2</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Reingresos</td>
+        								<td data-label="">2</td>
+                        <td data-label="">0</td>
+                        <td data-label="">2</td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div><!--// Movimientos Tipo de Movimientos -->
+
+                <div class="modal__buttons-container">
+                  <button class="main-btn main-btn__white download_button" type="button"><img src="img/icon-download.svg">Descargar comprobante</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="" class="main-btn main-btn__orange close_modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- // TERMINA MODAL CONSULTAR ACUSE-->
+
+    <!--MODAL RESPUESTA -->
+    <div class="modal fade modal_respuesta modal-small" id="" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Respuesta</h2>
+            <button type="button" class="close close_modal" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <div class="content_module_wrapper">
+                <!--Tables Respuestas IMSS -->
+                <div class="tables_container tables-acuse-modal">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">Respuesta IMSS</th>
+        					      <th scope="col"></th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+                        <td data-label="">Lote</td>
+        								<td data-label="">276751867</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Registro patronal</td>
+        								<td data-label="">Y681534310</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Nombre</td>
+        								<td data-label="">MA SOCORRO ALVAREZ MOSQUERA</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Tipo de lote</td>
+        								<td data-label="">Individual</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Fecha de transacción</td>
+        								<td data-label="">24/Ago/2020 14:26</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Fecha de acuse de recibo</td>
+        								<td data-label="">24/Ago/2020 14:26</td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div><!--// Termina Tables Movimientos Afiliatorios-Acuse -->
+
+                <!--Tables Respuesta al patrón -->
+                <div class="tables_container tables-respuesta-patron">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col"><span>AFIL IDSE-03</span> Respuesta al patrón</th>
+        					      <th scope="col"></th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+                        <td data-label="">Registro patronal</td>
+        								<td data-label="">
+                          <select>
+                            <option>YG681534310</option>
+                            <option>YG681534311</option>
+                            <option>YG681534312</option>
+                          </select>
+                        </td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Nombre</td>
+        								<td data-label="">MA SOCORRO ALVAREZ MOSQUERA</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Vista de movimientos</td>
+        								<td data-label="">
+                          <select>
+                            <option>Consolidados</option>
+                            <option>Consolidados 1</option>
+                            <option>Consolidados 2</option>
+                          </select>
+                        </td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div><!--// Movimientos Respuesta al patrón -->
+
+                <!--Tables Tipo de Movimientos-->
+                <div class="tables_container tables-acuse-tipo-movimientos">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">Tipo de Movimiento</th>
+        					      <th scope="col">Total</th>
+                        <th scope="col">Error</th>
+                        <th scope="col">Aceptados</th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+                        <td data-label="">Baja</td>
+        								<td data-label="">2</td>
+                        <td data-label="">0</td>
+                        <td data-label="">2</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Modificación</td>
+        								<td data-label="">2</td>
+                        <td data-label="">0</td>
+                        <td data-label="">2</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Reingresos</td>
+        								<td data-label="">2</td>
+                        <td data-label="">0</td>
+                        <td data-label="">0</td>
+        					    </tr>
+                      <tr>
+                        <td data-label=""><strong>Total</strong></td>
+        								<td data-label=""><strong>6</strong></td>
+                        <td data-label=""><strong>0</strong></td>
+                        <td data-label=""><strong>2</strong></td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div><!--// Movimientos Tipo de Movimientos -->
+
+                <div class="modal__buttons-container">
+                  <button class="main-btn main-btn__white download_button" type="button"><img src="img/icon-download.svg">Descargar comprobante</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="" class="main-btn main-btn__orange close_modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- // TERMINA MODAL RESPUESTA-->
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
+    <script src="js/CustomEase.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

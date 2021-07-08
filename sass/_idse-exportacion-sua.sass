@@ -34,6 +34,10 @@
   user-select: none
   margin-bottom: 30px
 
+.dropdown_item
+  .container_checkbox
+    line-height: 1.6em
+
 .container_checkbox input
   position: absolute
   opacity: 0
@@ -128,6 +132,8 @@
     font-size: .9em
     color: $labelcolor
     font-weight: 600
+    input[type=checkbox]
+      width: auto
     span
       text-transform: none
   input
@@ -139,6 +145,15 @@
     border-radius: 6px
     font-size: 1.3em
     height: 49px
+  textarea
+    display: block
+    width: 100%
+    padding: 12px
+    border: none
+    background-color: $lightgrey
+    border-radius: 6px
+    font-size: 1.3em
+    height: 100px
 
 .dropdown_item
   select
