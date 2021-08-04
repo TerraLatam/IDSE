@@ -1,0 +1,629 @@
+//TABLA Lotes enviados
+.tables-listado-emisiones
+  overflow-x: auto
+  table
+    width: 1900px
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        border-radius: 4px
+        border-bottom: none
+        th:nth-child(1)
+          width: 160px
+          padding-left: 30px
+        th:nth-child(2)
+          width: 170px
+        th:nth-child(3)
+          width: 170px
+        th:nth-child(4)
+          width: 170px
+        th:nth-child(5)
+          width: 170px
+        th:nth-child(6)
+          width: 100px
+        th:nth-child(7)
+          width: 295px
+        th:nth-child(8)
+          width: 320px
+        th:nth-child(9)
+          width: 320px
+    tbody
+      tr
+        td:nth-child(1)
+          width: 160px
+          padding-left: 30px
+        td:nth-child(2)
+          width: 170px
+        td:nth-child(3)
+          width: 170px
+        td:nth-child(4)
+          width: 170px
+        td:nth-child(5)
+          width: 170px
+        td:nth-child(6)
+          width: 100px
+        td:nth-child(7)
+          width: 295px
+        td:nth-child(8)
+          width: 330px
+        td:nth-child(9)
+          width: 330px
+
+@media screen and (max-width: 1366px)
+  .tables_container.tables-listado-emisiones
+    overflow-x: auto
+    table
+      width: 1900px
+
+
+//TABLES MODAL EDICION DESCARGA
+.tables_container.tables-emision-descarga
+  overflow-x: auto
+  font-size: .9em
+  table
+    width: 675px
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        th:nth-child(1)
+          width: 220px
+          padding-left: 15px
+        th:nth-child(2)
+          width: 270px
+    tbody
+      tr
+        border: none
+        td
+          padding: .225em
+        td:nth-child(1)
+          width: 210px
+          padding-left: 15px
+        td:nth-child(2)
+          width: 280px
+
+@media (max-width: $screen-sm-min-576)
+  .tables_container.tables-emision-descarga
+    table
+      width: 460px
+      thead
+        tr
+          th:nth-child(1)
+            width: 200px
+            padding-left: 15px
+          th:nth-child(2)
+            width: 220px
+      tbody
+        tr
+          border: none
+          td
+            padding: .225em
+          td:nth-child(1)
+            width: 200px
+            padding-left: 15px
+          td:nth-child(2)
+            width: 220px
+
+
+
+.aviso_modal
+  background-color: $lightgreen
+  border-radius: 8px
+  padding: 8px 12px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-bottom: 20px
+  p
+    margin: 0
+    color: #155724
+    font-size: .9em
+    line-height: 1.2em
+    span
+      display: block
+      font-size: .9em
+      opacity: .6
+  .close_aviso
+    cursor: pointer
+
+.file_not_available
+  width: 7px
+  height: 7px
+  border-radius: 200px
+  background-color: #F2BC1C
+  content: ''
+  display: inline-block
+  margin-right: 7px
+
+.file_available
+  width: 7px
+  height: 7px
+  border-radius: 200px
+  background-color: #28A745
+  content: ''
+  display: inline-block
+  margin-right: 7px
+
+
+//TABLA MODAL EMISION LISTA ARCHIVOS DESCARGAS
+.tables_container.tables-listas-archivos-descargas
+  overflow-x: auto
+  font-size: .9em
+  margin-bottom: 1rem
+  table
+    width: 675px
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        th:nth-child(1)
+          width: 290px
+          padding-left: 15px
+        th:nth-child(2)
+          width: 85px
+          text-align: center
+        th:nth-child(3)
+          width: 170px
+        th:nth-child(4)
+          width: 100px
+    tbody
+      tr
+        border: none
+        td
+          padding: .225em
+        td:nth-child(1)
+          width: 290px
+          padding-left: 15px
+        td:nth-child(2)
+          width: 85px
+          text-align: center
+        td:nth-child(3)
+          width: 170px
+        td:nth-child(4)
+          width: 100px
+
+@media (max-width: $screen-sm-min-576)
+  .tables_container.tables-listas-archivos-descargas
+    table
+      width: 615px
+      thead
+        tr
+          th:nth-child(1)
+            width: 255px
+      tbody
+        tr
+          td:nth-child(1)
+            width: 255px
+
+
+//DETALLE DE EMISIONES
+.tables_container.tables-detalle-de-emisiones
+  overflow-x: auto
+  table
+    width: auto
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        border-radius: 4px
+        border-bottom: none
+        th:nth-child(1)
+          width: 190px
+          padding-left: 30px
+        th:nth-child(2)
+          width: 350px
+    tbody
+      tr
+        border: none
+        td:nth-child(1)
+          width: 190px
+          padding-left: 30px
+        td:nth-child(2)
+          width: 350px
+
+
+@media screen and (max-width: 1366px)
+  .tables_container.tables-detalle-de-emisiones
+    overflow-x: auto
+    table
+      width: 540px
+
+
+//DETALLE DE EMISIONES TABLA BOTTOM
+.tables_container.tables-detalle-de-emisiones-tabla-bottom
+  overflow-x: auto
+  table
+    width: 1286px
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        border-radius: 4px
+        border-bottom: none
+        th:nth-child(1)
+          width: 255px
+          padding-left: 30px
+        th:nth-child(2)
+          width: 255px
+          text-align: center
+        th:nth-child(3)
+          width: 255px
+          text-align: center
+        th:nth-child(4)
+          width: 255px
+          text-align: center
+        th:nth-child(5)
+          width: 255px
+          text-align: center
+    tbody
+      tr
+        td:nth-child(1)
+          width: 255px
+          padding-left: 30px
+        td:nth-child(2)
+          width: 255px
+          text-align: center
+        td:nth-child(3)
+          width: 255px
+          text-align: center
+        td:nth-child(4)
+          width: 255px
+          text-align: center
+        td:nth-child(5)
+          width: 255px
+          text-align: center
+
+
+@media screen and (max-width: 1366px)
+  .tables_container.tables-detalle-de-emisiones-tabla-bottom
+    overflow-x: auto
+    table
+      width: 810px
+      thead
+        tr
+          th:nth-child(1)
+            width: 160px
+            padding-left: 30px
+          th:nth-child(2)
+            width: 160px
+            text-align: center
+          th:nth-child(3)
+            width: 160px
+            text-align: center
+          th:nth-child(4)
+            width: 160px
+            text-align: center
+          th:nth-child(5)
+            width: 160px
+            text-align: center
+      tbody
+        tr
+          td:nth-child(1)
+            width: 160px
+            padding-left: 30px
+          td:nth-child(2)
+            width: 160px
+            text-align: center
+          td:nth-child(3)
+            width: 160px
+            text-align: center
+          td:nth-child(4)
+            width: 160px
+            text-align: center
+          td:nth-child(5)
+            width: 160px
+            text-align: center
+
+
+
+//TABLA MODAL EMISION - EMISION MENSUAL
+.tables_container.tables-emision-mensual
+  overflow-x: auto
+  font-size: .9em
+  margin-bottom: 1rem
+  table
+    width: 675px
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        th:nth-child(1)
+          width: 490px
+          padding-left: 15px
+        th:nth-child(2)
+          width: 85px
+    tbody
+      tr
+        td
+          padding: .225em
+        td:nth-child(1)
+          width: 490px
+          padding-left: 15px
+        td:nth-child(2)
+          width: 85px
+      tr:last-child
+        border-bottom: none
+
+@media (max-width: $screen-sm-min-576)
+  .tables_container.tables-emision-mensual
+    table
+      width: 345px
+      thead
+        tr
+          th:nth-child(1)
+            width: 255px
+      tbody
+        tr
+          td:nth-child(1)
+            width: 255px
+
+
+
+
+//TABLA MODAL LISTA DE ASEGURADOS
+.tables_container.tables-listas-de-asegurados
+  overflow-x: auto
+  font-size: .9em
+  margin-bottom: 1rem
+  table
+    width: 675px
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        th:nth-child(1)
+          width: 220px
+          padding-left: 15px
+        th:nth-child(2)
+          width: 255px
+    tbody
+      tr
+        border: none
+        td
+          padding: .225em
+        td:nth-child(1)
+          width: 220px
+          padding-left: 15px
+        td:nth-child(2)
+          width: 255px
+        td:nth-child(3)
+
+@media (max-width: $screen-sm-min-576)
+  .tables_container.tables-listas-de-asegurados
+    table
+      width: 420px
+      thead
+        tr
+          th:nth-child(1)
+            width: 160px
+          th:nth-child(2)
+            width: 250px
+      tbody
+        tr
+          td:nth-child(1)
+            width: 160px
+          td:nth-child(2)
+            width: 250px
+
+
+
+//TABLA MODAL EMISION Pop NSS
+.tables_container.tables_modal_emision_pop_nss
+  overflow-x: auto
+  font-size: .9em
+  margin-bottom: 1rem
+  table
+    width: 675px
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        th:nth-child(1)
+          width: 220px
+          padding-left: 15px
+        th:nth-child(2)
+          width: 255px
+    tbody
+      tr
+        border: none
+        td
+          padding: .225em
+        td:nth-child(1)
+          width: 220px
+          padding-left: 15px
+        td:nth-child(2)
+          width: 255px
+        td:nth-child(3)
+
+@media (max-width: $screen-sm-min-576)
+  .tables_container.tables_modal_emision_pop_nss
+    table
+      width: 415px
+      thead
+        tr
+          th:nth-child(1)
+            width: 150px
+      tbody
+        tr
+          td:nth-child(1)
+            width: 150px
+
+
+//TABLA MODAL EMISION Pop NSS2
+.tables_container.tables-modal_emision_pop_nss_2
+  overflow-x: auto
+  font-size: .9em
+  margin-bottom: 1rem
+  table
+    border-collapse: collapse
+    border: 0 solid #f4f4f4
+    width: 675px
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        th:nth-child(1)
+          width: 70%
+          padding-left: 15px
+        th:nth-child(2)
+          width: 30%
+    tbody
+      tr
+        border: none
+        td
+          border: 0 solid #f4f4f4
+          padding: .225em
+        td:nth-child(1)
+          width: 70%
+          padding-left: 15px
+        td:nth-child(2)
+          width: 30%
+
+@media (max-width: $screen-sm-min-576)
+  .tables_container.tables-modal_emision_pop_nss_2
+    table
+      width: 370px
+      thead
+        tr
+          th:nth-child(1)
+            width: 180px
+          th:nth-child(2)
+            width: 170px
+      tbody
+        tr
+          td:nth-child(1)
+            width: 180px
+          td:nth-child(2)
+            width: 170px
+
+
+//TABLA MODAL EMISION Pop NSS3
+.tables_container.tables-modal_emision_pop_nss_3
+  overflow-x: auto
+  font-size: .9em
+  margin-bottom: 1rem
+  table
+    border-collapse: collapse
+    border: 0 solid #f4f4f4
+    width: 675px
+    thead
+      color: $black
+      tr
+        background-color: $lightgrey
+        th:nth-child(1)
+          width: 70%
+          padding-left: 15px
+        th:nth-child(2)
+          width: 30%
+    tbody
+      tr
+        border: none
+        td
+          border: 0 solid #f4f4f4
+          padding: .225em
+        td:nth-child(1)
+          width: 70%
+          padding-left: 15px
+        td:nth-child(2)
+          width: 30%
+
+@media (max-width: $screen-sm-min-576)
+  .tables_container.tables-modal_emision_pop_nss_3
+    table
+      width: 100%
+      thead
+        tr
+          th:nth-child(1)
+            width: 63%
+          th:nth-child(2)
+            width: 37%
+      tbody
+        tr
+          td:nth-child(1)
+            width: 63%
+          td:nth-child(2)
+            width: 37%
+
+
+.bck_grey
+  background-color: #F4F4F4
+
+.modal_inputs_wrapper
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-bottom: 25px
+  input
+    width: 32%
+    padding: 12px
+    border: none
+    background-color: #F4F4F4
+    border-radius: 6px
+    font-size: 1em
+    height: 49px
+    background-image: url(../img/icon_search.svg)
+    background-repeat: no-repeat
+    background-size: 15px
+    background-position: 10px 50%
+    padding-left: 30px
+  button
+    width: 32%
+
+.modal-ver-detalle-open, .modal-ver-lista-open, .modal-ver-pop-nss-open
+  overflow: hidden
+
+.modal-ver-detalle-open
+  .modal_detalle_descarga.show
+    display: block
+    overflow-x: hidden
+    overflow-y: auto
+
+.modal-ver-lista-open
+  .modal_emision_lista_asegurados.show
+    display: block
+    overflow-x: hidden
+    overflow-y: auto
+
+.modal-ver-pop-nss-open
+  .modal_emision_pop_nss.show
+    display: block
+    overflow-x: hidden
+    overflow-y: auto
+
+
+
+//RESPONSIVE
+@media (min-width: $screen-xxl-dsk-1366)
+
+
+@media (max-width: $screen-xxl-dsk-1366)
+
+
+@media (max-width: $screen-xl-min-1210)
+
+
+@media (max-width: $screen-sm-dsk-1180)
+
+
+@media (max-width: $screen-lg-min-992)
+
+
+@media (max-width: $screen-md-min-769)
+  .modal_inputs_wrapper
+    flex-direction: column
+    input
+      width: 100%
+      margin: 5px 0
+    button
+      width: 100%
+      margin: 5px 0
+
+@media (max-width: $screen-sm-min-576)
+
+
+@media (max-width: $screen-xsm-min-375)
+
+
+@media (max-width: $screen-xxsm-min-321)

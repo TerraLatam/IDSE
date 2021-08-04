@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>IDSE | Emisión - Listado de emisiones</title>
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Resource-type" content="Document" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png"/>
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="fw">
+
+      <header role="header" class="fw">
+        <div class="box inner_container header__top--maincontainer bg__white flex-row-space-between">
+          <div class="header__top--logo"> <a href="index.html"><img class="header__top--image" src="img/logo-idse.svg" alt="logo IDSE" role="img"></a></div>
+          <div class="header__top--maintopnavigation">
+
+            <!--Icon/button documents list móvil-->
+            <div class="document__mobil-icon mobile-icon bg__white"><img src="img/icon-entry.svg"></div>
+
+            <!--Icon/button user móvil-->
+            <div class="user__mobil-icon mobile-icon bg__grey"><img src="img/icon-user.svg"></div>
+
+            <!--Menú móvil-->
+      			<div id="mobile_menu" class="mobile_menu">
+      				<div class="burguer_menu">
+      					<button aria-label="Menu" class="baseBurguer">
+      						<span class="baseBurguer_icon">
+      							<span class="baseBurguer_line"></span>
+      							<span class="baseBurguer_line"></span>
+      							<span class="baseBurguer_line"></span>
+      						</span>
+      					</button>
+      				</div>
+      			</div>
+
+            <!--Header Dropdown List-->
+            <div class="header__top--module header__top--dropdown">
+              <div class="header__top--dropdown-btn">
+                <div class="header__top--dropdown-content">
+                  <div class="header-wrapper">
+                    <img src="img/icon-entry.svg"><span id="" class="document-name">Apex2016 - 0606066910</span>
+                  </div>
+                  <div class="header__top--documents-detail">
+                    <ul>
+                      <li>Apex2016 - 0606066910</li>
+                      <li>Apex2016 - 0606066910</li>
+                      <li>E2359383106 - E235938310</li>
+                      <li>Apex2016 - 0606066910</li>
+                      <li>E2359383106 - E235938310</li>
+                      <li>Apex2016 - 0606066910</li>
+                      <li>Apex2016 - 0606066910</li>
+                      <li>Apex2016 - 0606066910</li>
+                      <li>E2359383106 - E235938310</li>
+                      <li>Apex2016 - 0606066910</li>
+                      <li>Apex2016 - 0606066910</li>
+                      <li>Apex2016 - 0606066910</li>
+                      <li>Apex2016 - 0606066910</li>
+                    </ul>
+                    <div class="btn_container">
+                      <button id="" class="main-btn main-btn__orange">Nuevo certificado</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Header User Info-->
+            <div class="header__top--module header__top--container">
+              <div class="header__top--user-name">
+                <div class="header__top--user-name-content">
+                  <div class="header-wrapper">
+                    <img src="img/icon-user.svg"><span id="" class="display-name">Minerva Gutierrez</span>
+                  </div>
+                  <div class="header__top--user-detail">
+                    <div class="inline-container">
+                      <div>Usuario </div>
+                      <div>marayaidse</div>
+                    </div>
+                    <div class="inline-container">
+                      <div>Consumo </div>
+                      <div>
+                        <div>
+                          <progress id="" class="barra-de-consumo" max="100" value="80">  </progress>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inline-container">
+                      <div>Último acceso </div>
+                      <div>15/09/2020 08:12 hrs</div>
+                    </div>
+                    <div class="">
+                      <button id="" class="main-btn main-btn__orange">Cerrar sesión</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Header bottom menu-->
+        <div class="header__bottom--maincontainer bg__orange fw w-100">
+          <div class="box inner_container">
+            <nav class="header__bottom--mainnavigation">
+              <ul>
+                <li class="li-w-sm"><a class="has-submenu" href="">Captura</a>
+                  <ul>
+                    <li><a href="idse-lotes-enviados.html" >Lotes enviados</a></li>
+                    <li><a href="">Captura</a></li>
+                    <li><a href="">Importación</a></li>
+                    <li><a href="">Envío</a></li>
+                  </ul>
+                </li>
+                <li class="li-w-sm"><a class="has-submenu" href="">Confronta</a>
+                  <ul>
+                    <li><a href="">Básica</a></li>
+                    <li><a href="">Premium</a></li>
+                  </ul>
+                </li>
+                <li class="li-w-sm"><a class="has-submenu" href="">Emisión</a>
+                  <ul>
+                    <li><a href="idse-emision-listado-emisiones.html">Listado de emisiones</a></li>
+                    <li><a class="submenu-active" href="idse-emision-detalle-emisiones.html">Detalle de emisiones</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Consultas</a></li>
+                <li><a href="idse-subsidiarias.html">Subsidiarias</a></li>
+                <li class="li-w-sm"><a class="has-submenu" href="idse-monitoreo-historico-de-movimientos.html">Monitoreo</a>
+                  <ul>
+                    <li><a href="idse-monitoreo-historico-de-movimientos.html">Histórico de Movimientos</a></li>
+                    <li><a href="idse-monitoreo-ftp.html">Monitoreo FTP</a></li>
+                  </ul>
+                </li>
+                <li class="li-w-sm"><a class="has-submenu" href="idse-exportacion-sua-inicial.html">Exportación SUA</a>
+                  <ul>
+                    <li><a href="idse-exportacion-sua-inicial.html">Exportación SUA</a></li>
+                    <li><a href="idse-ausentismos-incapacidades.html">Ausentismos e Incapacidades</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Respuestas masivas</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+
+      <main role="main" class="main__content fw">
+        <div class="fw bg__lightgrey">
+          <div class="subheader box inner_container">
+            <h1>Emisión</h1>
+            <div class="subheader__rightmenu">
+              <ul>
+                <li><a href="idse-emision-listado-emisiones.html">Listado de emisiones</a></li>
+                <li><a href="idse-emision-detalle-emisiones.html" class="active">Detalle de emisiones</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="box inner_container">
+          <div class="main_content_wrapper">
+            <div class="fw">
+              <div class="space__between-row">
+                <div>
+                  <span class="captura__select-label">RPs ASOCIADOS</span>
+                  <select name="select">
+                    <option value="value1" selected>0606066910</option>
+                    <option value="value2">0606066910</option>
+                    <option value="value3">0606066910</option>
+                    <option value="value3">0606066910</option>
+                    <option value="value3">0606066910</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="content_module_wrapper">
+                <!--Tables detalle de emisiones-->
+                <div class="tables_container tables-detalle-de-emisiones">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">Detalle de emisiones</th>
+        					      <th scope="col"></th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+        								<td data-label="">Registro patronal</td>
+                        <td data-label="">Y681534310</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Dígito verificador</td>
+                        <td data-label="">0</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Nombre</td>
+                        <td data-label="">MA SOCORRO ALVAREZ MOSQUERA</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Actividad</td>
+                        <td data-label="">ROSTICERIA VTA TORTAS, TACOS, REFRESCO 03320</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Tipo patrón</td>
+                        <td data-label="">0</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Estatus</td>
+                        <td data-label="">25</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Domicilio</td>
+                        <td data-label="">SARATOGA 700 A BIS</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Localidad</td>
+                        <td data-label="">PORTALES DF</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Municipio IMSS</td>
+                        <td data-label="">813</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Delegación</td>
+                        <td data-label="">0</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Subdelegación</td>
+                        <td data-label="">0</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Representante</td>
+                        <td data-label="">MARIA DEL SOCORRO ALVAREZ MOSQUERA</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">NPIE</td>
+                        <td data-label="">Y6815343105</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Correo electrónico</td>
+                        <td data-label="">marayasam@yahoo.com</td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div>
+
+                <!--TABLAS DETALLE TABLAS-->
+                <div class="tables_container tables-detalle-de-emisiones-tabla-bottom">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">Período Anual</th>
+        					      <th scope="col">Período Mensual</th>
+                        <th scope="col">Suma EBA</th>
+                        <th scope="col">SUMA EMA</th>
+                        <th scope="col">Archivo</th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+        								<td data-label="">2020</td>
+                        <td data-label="">8</td>
+                        <td data-label="">7082.24</td>
+                        <td data-label="">3752.56</td>
+                        <td data-label=""><a class="show-modal-emision-ver-detalle" href="#">Detalle</a></td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">2019</td>
+                        <td data-label="">8</td>
+                        <td data-label="">7082.24</td>
+                        <td data-label="">3752.56</td>
+                        <td data-label=""><a class="show-modal-emision-ver-detalle" href="#">Detalle</a></td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+
+      <footer role="footer" class="fw">
+        <div class="box inner_container footer__container">
+          <div class="footer__grey bg__grey">
+            <p><strong>Info de interés</strong></p>
+            <p class="hide-on-mobile"> | </p>
+            <p>Soporte: <span> <a href="tel:8009171717">800 9171717</a></span></p>
+            <p><a href="#">Aviso Legal</a></p>
+          </div>
+          <div class="footer__orange">
+            <div><img src="img/logo-terra.svg"></div>
+            <p>© Copyright 2020. <br>Terra Networks México</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+
+
+    <!--MODAL DETALLE DESCARGA -->
+    <div class="modal fade modal_detalle_descarga modal-small" id="" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Emisión</h2>
+            <button type="button" class="close close_modal" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <div class="content_module_wrapper">
+                <!--Tables Consulta Resumen de Emisiones -->
+                <div class="tables_container tables-emision-descarga">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">Consulta Resumen de Emisiones</th>
+        					      <th scope="col"></th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+                        <td data-label="">Registro Patronal</td>
+        								<td data-label="">Y681534310</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Nombre</td>
+        								<td data-label="">MA SOCORRO ALVAREZ MOSQUERA</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Período Mensual</td>
+        								<td data-label="">8</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Período Anual</td>
+        								<td data-label="">2020</td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div><!--// Tables Consulta Resumen de Emisiones -->
+
+                <!--Tables Emisión Mensual -->
+                <div class="tables_container tables-emision-mensual">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">Emisión Mensual</th>
+        					      <th scope="col"></th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+                        <td data-label="">Delegación</td>
+        								<td data-label="">40</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Subdelegación</td>
+        								<td data-label="">54</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Número de trabajadores cotizantes</td>
+        								<td data-label="">4</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Número de crédito</td>
+        								<td data-label="">201523679</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Prima de riesgo de trabajo</td>
+        								<td data-label="">.5</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Tipo de documento</td>
+        								<td data-label="">1</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Tipo de contribución</td>
+        								<td data-label="">3</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Cuota fija</td>
+        								<td data-label="">1,878.70</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Excedente</td>
+        								<td data-label="">43.81</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Prestaciones en dinero</td>
+        								<td data-label="">278.18</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Gastos médicos de pensionados</td>
+        								<td data-label="">417.26</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Riesgos de trabajo</td>
+        								<td data-label="">146.40</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Invalidez y vida</td>
+        								<td data-label="">695.41</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Guarderías</td>
+        								<td data-label="">695.41</td>
+        					    </tr>
+                      <tr>
+                        <td data-label=""><strong>TOTAL IMSS</strong></td>
+        								<td data-label=""><strong>3,752.56</strong></td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div><!--// Tables Emisión Mensual -->
+
+                <!--Tables Emisión Bimestral -->
+                <div class="tables_container tables-emision-mensual">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">Emisión Bimestral</th>
+        					      <th scope="col"></th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+                      <tr>
+                        <td data-label="">Tipo de patrón</td>
+        								<td data-label="">0</td>
+        					    </tr>
+        					    <tr>
+                        <td data-label="">Delegación</td>
+        								<td data-label="">40</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Subdelegación</td>
+        								<td data-label="">54</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Número de trabajadores cotizantes</td>
+        								<td data-label="">4</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Número de crédito</td>
+        								<td data-label="">201523679</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Prima de riesgo de trabajo</td>
+        								<td data-label="">.5</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Tipo de documento</td>
+        								<td data-label="">1</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Tipo de contribución</td>
+        								<td data-label="">3</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Folio Infonavit</td>
+        								<td data-label="">207523679</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Trabajadores con crédito</td>
+        								<td data-label="">0</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">APORTACIÓN PATRONAL</td>
+        								<td data-label="">3,140.68</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Aportación patronal sin crédito</td>
+        								<td data-label="">3,140.68</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Aportación patronal con crédito</td>
+        								<td data-label="">00.00</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Amortización</td>
+        								<td data-label="">00.00</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">TOTAL INFONAVIT</td>
+        								<td data-label="">3,140.68</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Retiro</td>
+        								<td data-label="">1,256.27</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Cesantía y vejez</td>
+        								<td data-label="">2,685.29</td>
+        					    </tr>
+                      <tr>
+                        <td data-label=""><strong>TOTAL IMSS</strong></td>
+        								<td data-label=""><strong>3,941.56</strong></td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div><!--// Tables Emisión Bimestral -->
+
+                <div class="modal__buttons-container">
+                  <button class="main-btn main-btn__white consulta_asegurados_btn" type="button">Consulta de asegurados</button>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="" class="main-btn main-btn__orange close_modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- // TERMINA MODAL DETALLE DESCARGA-->
+
+
+
+
+    <!--MODAL LISTA DE ASEGURADOS -->
+    <div class="modal fade modal_emision_lista_asegurados modal-small" id="" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Emisión</h2>
+            <button type="button" class="close close_modal" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <div class="content_module_wrapper">
+                <!--Tables Consulta Lista de asegurados -->
+                <div class="tables_container tables-listas-de-asegurados">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">Lista de Asegurados</th>
+        					      <th scope="col"></th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+                        <td data-label="">Registro Patronal</td>
+        								<td data-label="">B131619710</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Nombre</td>
+        								<td data-label="">PANIFICACION HISPANO MEXICANA SA</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Período Mensual</td>
+        								<td data-label="">1</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Período Anual</td>
+        								<td data-label="">2021</td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div><!--// Tables Consulta Lista de asegurados -->
+
+                <div class="modal_inputs_wrapper">
+                  <input type="text" id="" name="" class="" placeholder="Busqueda" />
+                  <button id="" class="main-btn main-btn__orange ">Buscar por NSS</button>
+                  <button id="" class="main-btn main-btn__orange ">Buscar por Ap. Paterno</button>
+                </div>
+
+                <!--Tables Listas de asegurados NSS Nombre -->
+                <div class="tables_container tables-listas-de-asegurados">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">NSS</th>
+        					      <th scope="col">Nombre</th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+                        <td data-label=""><a class="open_nss_number" href="#">39006600900</a></td>
+        								<td data-label="">ALCANTARA FUENTES ELVIA AURORA</td>
+        					    </tr>
+                      <tr>
+                        <td data-label=""><a class="open_nss_number" href="#">45916918761</a></td>
+        								<td data-label="">ARELLANO ESCOBAR PABLO</td>
+        					    </tr>
+                      <tr>
+                        <td data-label=""><a class="open_nss_number" href="#">85149536451</a></td>
+        								<td data-label="">ARELLANO MACEDO GELACIO DANIEL</td>
+        					    </tr>
+                      <tr>
+                        <td data-label=""><a class="open_nss_number" href="#">96017700947</a></td>
+        								<td data-label="">BERNABE VAZQUEZ JOSE LUIS</td>
+        					    </tr>
+                      <tr>
+                        <td data-label=""><a class="open_nss_number" href="#">16897085649</a></td>
+        								<td data-label="">CRUZ GARCIA AMELIA</td>
+        					    </tr>
+                      <tr>
+                        <td data-label=""><a class="open_nss_number" href="#">42017403413</a></td>
+        								<td data-label="">DE LA CRUZ HERNANDEZ MARCELO</td>
+        					    </tr>
+                      <tr>
+                        <td data-label=""><a class="open_nss_number" href="#">45906923979</a></td>
+        								<td data-label="">FERNANDEZ FERNANDEZ RUFINA</td>
+        					    </tr>
+                      <tr>
+                        <td data-label=""><a class="open_nss_number" href="#">49160070626</a></td>
+        								<td data-label="">GARCIA CASTILLO JOSE LUIS</td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div><!--// Tables  Listas de asegurados NSS Nombre -->
+
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="" class="main-btn main-btn__orange close_modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- // TERMINA MODAL LISTA DE ASEGURADOS-->
+
+
+    <!--MODAL Emision – Pop NSS -->
+    <div class="modal fade modal_emision_pop_nss modal-small" id="" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Emisión</h2>
+            <button type="button" class="close close_modal" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <div class="content_module_wrapper">
+                <!--Tables Emision – Pop NSSs -->
+                <div class="tables_container tables_modal_emision_pop_nss">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">Consulta de Movimientos</th>
+        					      <th scope="col"></th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+                        <td data-label="">Registro Patronal</td>
+        								<td data-label="">B131619710</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Nombre</td>
+        								<td data-label="">PANIFICACION HISPANO MEXICANA SA</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Período Mensual</td>
+        								<td data-label="">1</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Período Anual</td>
+        								<td data-label="">2021</td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div><!--// Tables Emision – Pop NSS -->
+
+
+                <!--Tables Listas de asegurados NSS Nombre -->
+                <div class="tables_container tables-modal_emision_pop_nss_2">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">Datos del Asegurado</th>
+        					      <th scope="col"></th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+                        <td data-label="">Número del Seguro Social</td>
+        								<td data-label="">16897085649</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Nombre del Asegurado</td>
+        								<td data-label="">CRUZ GARCIA AMELIA</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">CURP</td>
+        								<td data-label="">CUGA700510MMCRRM08</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Tipo de Trabajador</td>
+        								<td data-label="">1</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Período</td>
+        								<td data-label="">1/2021</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Semana o Jornada Reducida</td>
+        								<td data-label="">0</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Tipo de Pensionado</td>
+        								<td data-label="">0</td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div><!--// Tables  Listas de asegurados NSS Nombre -->
+
+                <!--Tables Emisión mensual -->
+                <div class="tables_container tables-modal_emision_pop_nss_3">
+        					<table>
+        					  <thead>
+        					    <tr>
+        					      <th scope="col">Emisión Mensual</th>
+        					      <th scope="col"></th>
+        					    </tr>
+        					  </thead>
+        					  <tbody>
+        					    <tr>
+                        <td data-label="">Tipo de movimiento</td>
+        								<td data-label="">9</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Origen</td>
+        								<td data-label="">4</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Fecha de movimiento</td>
+        								<td data-label="">1/ENE/1900</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Número de crédito</td>
+        								<td data-label="">4</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Días cotizados</td>
+        								<td data-label="">31</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="">Salario diario integral</td>
+        								<td data-label="">215.17</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="" class="bck_grey">Cuota fija</td>
+        								<td data-label="" class="bck_grey">549.43</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="" class="bck_grey">Invalidez y vida</td>
+        								<td data-label="" class="bck_grey">158.42</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="" class="bck_grey">Gastos médicos</td>
+        								<td data-label="" class="bck_grey">95.05</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="" class="bck_grey">Riesgos de trabajo</td>
+        								<td data-label="" class="bck_grey">44.02</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="" class="bck_grey">Guarderias</td>
+        								<td data-label="" class="bck_grey">66.70</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="" class="bck_grey">Prestaciones en dinero</td>
+        								<td data-label="" class="bck_grey">63.37</td>
+        					    </tr>
+                      <tr>
+                        <td data-label="" class="bck_grey">Excedente</td>
+        								<td data-label="" class="bck_grey">0.00</td>
+        					    </tr>
+                      <tr>
+                        <td data-label=""><strong>TOTAL IMSS</strong></td>
+        								<td data-label=""><strong>976.99</strong></td>
+        					    </tr>
+        					  </tbody>
+        					</table>
+        				</div><!--// Tables Emisión mensual -->
+
+                <div class="modal__buttons-container">
+                  <button class="main-btn main-btn__white" type="button"><img src="img/icon-printer.svg"> Imprimir</button>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="" class="main-btn main-btn__orange close_modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- // TERMINA MODAL Emision – Pop NSS-->
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
+    <script src="js/CustomEase.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

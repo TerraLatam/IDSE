@@ -79,7 +79,10 @@ $('.has-submenu').click(function(){
 })
 
 
-
+//LISTADO DE EMISIONES - Cerrar Aviso "Descarga en proceso" Modal
+$('.close_aviso').click(function(){
+  $(this).parent('.aviso_modal').fadeOut();
+})
 
 //EXPORTACION SUA
 //Show and hide options -- Expoortacion SUA
@@ -213,6 +216,42 @@ $('.close_modal').click(function(event){
   $('body').removeClass('modal-respuesta-open');
   $('.modal_respuesta').removeClass('show');
 })
+//MODAL Emision - Detalle de Archivos
+$('.show-modal-emision-ver-detalle').click(function(event){
+  event.preventDefault();
+  $('body').addClass('modal-ver-detalle-open');
+  $('.modal_detalle_descarga').addClass('show');
+})
+
+$('.close_modal, .consulta_asegurados_btn').click(function(event){
+  event.preventDefault();
+  $('body').removeClass('modal-ver-detalle-open');
+  $('.modal_detalle_descarga').removeClass('show');
+})
+//MODAL Emision - Lista de asegurados
+$('.consulta_asegurados_btn').click(function(event){
+  event.preventDefault();
+  $('body').addClass('modal-ver-lista-open');
+  $('.modal_emision_lista_asegurados').addClass('show');
+})
+$('.close_modal, .open_nss_number').click(function(event){
+  event.preventDefault();
+  $('body').removeClass('modal-ver-lista-open');
+  $('.modal_emision_lista_asegurados').removeClass('show');
+})
+//MODAL Emision – Pop NSS
+$('.open_nss_number').click(function(event){
+  event.preventDefault();
+  $('body').addClass('modal-ver-pop-nss-open');
+  $('.modal_emision_pop_nss').addClass('show');
+})
+$('.close_modal').click(function(event){
+  event.preventDefault();
+  $('body').removeClass('modal-ver-pop-nss-open');
+  $('.modal_emision_pop_nss').removeClass('show');
+})
+
+
 
 
 
