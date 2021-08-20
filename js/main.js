@@ -252,7 +252,122 @@ $('.close_modal').click(function(event){
 })
 
 
+//INPUTS idse-consultas.html
+$(".registro_patronal_checkbox").change(function() {
+    if(this.checked) {
+      $('.content_nss').hide();
+      $('.content_registro_patronal').show();
+      $('.content_movimientos-rechazados').hide();
+      $('.content_expiracion-certificados').hide();
+      $('.consulta_enabled1').removeClass('disable_input');
+      $('.consulta_enabled2').addClass('disable_input');
+      $('.consulta_enabled3').addClass('disable_input');
+      $('.consulta_enabled4').addClass('disable_input');
+      $('.nss_checkbox').prop( "checked", false );
+      $('.numero_de_lote_checkbox').prop( "checked", false );
+      $('.reporte_general_checkbox').prop( "checked", false );
+      $('.mov_rechazados_checkbox').prop( "checked", false );
+      $('.exp_certificados_checkbox').prop( "checked", false );
+    }else {
+      $('.consulta_enabled1').addClass('disable_input');
+    }
+});
 
+$(".nss_checkbox").change(function() {
+    if(this.checked) {
+      $('.content_nss').show();
+      $('.content_registro_patronal').hide();
+      $('.content_movimientos-rechazados').hide();
+      $('.content_expiracion-certificados').hide();
+      $('.consulta_enabled2').removeClass('disable_input');
+      $('.consulta_enabled1').addClass('disable_input');
+      $('.consulta_enabled3').addClass('disable_input');
+      $('.consulta_enabled4').addClass('disable_input');
+      $('.registro_patronal_checkbox').prop( "checked", false );
+      $('.numero_de_lote_checkbox').prop( "checked", false );
+      $('.reporte_general_checkbox').prop( "checked", false );
+      $('.mov_rechazados_checkbox').prop( "checked", false );
+      $('.exp_certificados_checkbox').prop( "checked", false );
+    }else {
+      $('.consulta_enabled2').addClass('disable_input');
+    }
+});
+
+$(".numero_de_lote_checkbox").change(function() {
+    if(this.checked) {
+      $('.content_nss').hide();
+      $('.content_registro_patronal').show();
+      $('.content_movimientos-rechazados').hide();
+      $('.content_expiracion-certificados').hide();
+      $('.consulta_enabled1').addClass('disable_input');
+      $('.consulta_enabled2').addClass('disable_input');
+      $('.consulta_enabled3').removeClass('disable_input');
+      $('.consulta_enabled4').addClass('disable_input');
+      $('.nss_checkbox').prop( "checked", false );
+      $('.registro_patronal_checkbox').prop( "checked", false );
+      $('.reporte_general_checkbox').prop( "checked", false );
+      $('.mov_rechazados_checkbox').prop( "checked", false );
+      $('.exp_certificados_checkbox').prop( "checked", false );
+    }else {
+      $('.consulta_enabled3').addClass('disable_input');
+    }
+});
+
+$(".reporte_general_checkbox").change(function() {
+    if(this.checked) {
+      $('.content_nss').hide();
+      $('.content_registro_patronal').show();
+      $('.content_movimientos-rechazados').hide();
+      $('.content_expiracion-certificados').hide();
+      $('.consulta_enabled1').addClass('disable_input');
+      $('.consulta_enabled2').addClass('disable_input');
+      $('.consulta_enabled3').addClass('disable_input');
+      $('.consulta_enabled4').removeClass('disable_input');
+      $('.nss_checkbox').prop( "checked", false );
+      $('.registro_patronal_checkbox').prop( "checked", false );
+      $('.numero_de_lote_checkbox').prop( "checked", false );
+      $('.mov_rechazados_checkbox').prop( "checked", false );
+      $('.exp_certificados_checkbox').prop( "checked", false );
+    }else {
+      $('.consulta_enabled4').addClass('disable_input');
+    }
+});
+
+$(".mov_rechazados_checkbox").change(function() {
+    if(this.checked) {
+      $('.content_nss').hide();
+      $('.content_registro_patronal').hide();
+      $('.content_movimientos-rechazados').show();
+      $('.content_expiracion-certificados').hide();
+      $('.consulta_enabled1').addClass('disable_input');
+      $('.consulta_enabled2').addClass('disable_input');
+      $('.consulta_enabled3').addClass('disable_input');
+      $('.consulta_enabled4').addClass('disable_input');
+      $('.nss_checkbox').prop( "checked", false );
+      $('.registro_patronal_checkbox').prop( "checked", false );
+      $('.numero_de_lote_checkbox').prop( "checked", false );
+      $('.reporte_general_checkbox').prop( "checked", false );
+      $('.exp_certificados_checkbox').prop( "checked", false );
+    }
+});
+
+$(".exp_certificados_checkbox").change(function() {
+    if(this.checked) {
+      $('.content_nss').hide();
+      $('.content_registro_patronal').hide();
+      $('.content_movimientos-rechazados').hide();
+      $('.content_expiracion-certificados').show();
+      $('.consulta_enabled1').addClass('disable_input');
+      $('.consulta_enabled2').addClass('disable_input');
+      $('.consulta_enabled3').addClass('disable_input');
+      $('.consulta_enabled4').addClass('disable_input');
+      $('.nss_checkbox').prop( "checked", false );
+      $('.registro_patronal_checkbox').prop( "checked", false );
+      $('.numero_de_lote_checkbox').prop( "checked", false );
+      $('.reporte_general_checkbox').prop( "checked", false );
+      $('.mov_rechazados_checkbox').prop( "checked", false );
+    }
+});
 
 
 //CAPTURA LOTES ENVIADOS  idse-lotes-enviados.html
