@@ -679,31 +679,31 @@
                         <td data-label="">Emisión Mensual (Formato Visor)</td>
         								<td data-label="">0</td>
                         <td data-label=""><span class="file_not_available"></span>Archivo no disponible</td>
-                        <td data-label=""><a href="#">Solicitar archivo</a></td>
+                        <td data-label=""><a class="show-modal-emision-ver-status" href="#">Solicitar archivo</a></td>
         					    </tr>
                       <tr>
                         <td data-label="">Emisión Bimestral (Formato Visor)</td>
         								<td data-label="">0</td>
                         <td data-label=""><span class="file_not_available"></span>Archivo no disponible</td>
-                        <td data-label=""><a href="#">Solicitar archivo</a></td>
+                        <td data-label=""><a class="show-modal-emision-ver-status" href="#">Solicitar archivo</a></td>
         					    </tr>
                       <tr>
                         <td data-label="">Emisión Mensual/Bimestral (Formato Excel)</td>
         								<td data-label="">32 KB</td>
                         <td data-label=""><span class="file_available"></span>Archivo disponible</td>
-                        <td data-label=""><a href="#">Descargar</a></td>
+                        <td data-label=""><a class="show-modal-emision-ver-status" href="#">Descargar</a></td>
         					    </tr>
                       <tr>
                         <td data-label="">Emisión Mensual (Formato Visor)</td>
         								<td data-label="">0</td>
                         <td data-label=""><span class="file_not_available"></span>Archivo no disponible</td>
-                        <td data-label=""><a href="#">Solicitar archivo</a></td>
+                        <td data-label=""><a class="show-modal-emision-ver-status" href="#">Solicitar archivo</a></td>
         					    </tr>
                       <tr>
                         <td data-label="">Emisión Bimestral (Formato Visor)</td>
         								<td data-label="">0</td>
                         <td data-label=""><span class="file_not_available"></span>Archivo no disponible</td>
-                        <td data-label=""><a href="#">Solicitar archivo</a></td>
+                        <td data-label=""><a class="show-modal-emision-ver-status" href="#">Solicitar archivo</a></td>
         					    </tr>
                       <tr>
                         <td data-label="">Emisión Mensual (Formato SUA)</td>
@@ -737,6 +737,65 @@
       </div>
     </div><!-- // TERMINA MODAL DESCARGA-->
 
+    <!--MODAL STATUS DESCARGA -->
+<div class="modal fade  modal_detalle_status modal-small" id="" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Emisión</h2>
+        <button type="button" class="close close_modal" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <div class="content_module_wrapper">
+            <!--Tables Solicitud de descarga de emisión -->
+            <div class="tables_container tables-emision-descarga-status">
+              <table  style="overflow-x:auto;">
+                <thead>
+                  <tr>
+                    <th scope="col">Solicitud de descarga de emisión</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="">Registro Patronal</td>
+                    <td data-label="">Y681534310</td>
+                  </tr>
+                  <tr>
+                    <td data-label="">Período Anual</td>
+                    <td data-label="">2020</td>
+                  </tr>
+                  <tr>
+                    <td data-label="" >Período Mensual</td>
+                    <td data-label="">8</td>
+                  </tr>
+                  <tr>
+                    <td data-label="">Fecha</td>
+                    <td data-label="">14:06:10 - 15 sep 2020</td>
+                  </tr>
+                  <tr>
+                    <td data-label="">Mensaje</td>
+                    <td data-label="" class="mensaje_status" style="white-space:normal;">La descarga del archivo esta en proceso, favor de verificar más tarde.</td>
+                  </tr>
+                  
+                  
+                </tbody>
+              </table>
+            </div><!--// Tables Solicitud de descarga de emisión -->
+
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" style="justify-content: space-between;">
+        <button class="main-btn main-btn__white back_modal main-btn_white-orange back_modal show-modal-respuesta" type="button">Regresar</button>
+        <button id="" class="main-btn main-btn__orange close_modal main-btn-width">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div><!-- // TERMINA MODAL STATUS DESCARGA-->
 
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>

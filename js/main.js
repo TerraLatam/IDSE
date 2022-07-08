@@ -216,6 +216,26 @@ $('.close_modal').click(function(event){
   $('body').removeClass('modal-respuesta-open');
   $('.modal_respuesta').removeClass('show');
 })
+
+//MODAL Emision - descargar status
+$('.show-modal-emision-ver-status').click(function(event){
+  event.preventDefault();
+  $('body').addClass('.modal-ver-status-open');
+  $('.modal_detalle_status').addClass('show');
+  $('body').removeClass('modal-respuesta-open');
+  $('.modal_respuesta').removeClass('show');
+})
+$('.close_modal, .consulta_asegurados_btn').click(function(event){
+  event.preventDefault();
+  $('body').removeClass('.modal-ver-status-open');
+  $('.modal_detalle_status').removeClass('show');
+})
+$('.back_modal, .consulta_asegurados_btn').click(function(event){
+  event.preventDefault();
+  $('body').removeClass('.modal-ver-status-open');
+  $('.modal_detalle_status').removeClass('show');
+})
+
 //MODAL Emision - Detalle de Archivos
 $('.show-modal-emision-ver-detalle').click(function(event){
   event.preventDefault();
@@ -250,7 +270,6 @@ $('.close_modal').click(function(event){
   $('body').removeClass('modal-ver-pop-nss-open');
   $('.modal_emision_pop_nss').removeClass('show');
 })
-
 
 //INPUTS idse-consultas.html
 $(".registro_patronal_checkbox").change(function() {
