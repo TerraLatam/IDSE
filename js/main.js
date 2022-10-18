@@ -9,22 +9,49 @@ $('.document__mobil-icon, .user__mobil-icon').click(function(){
   $('body').removeClass('mainMenuOpen')
 })
 //ON DESKTOP OPEN DROPDOWN MENU
-$('.header__top--dropdown-content').click(function(){
+$('.header-wrapper-dropdown').click(function(){
   $('body').toggleClass('display-dropdownlist-desktop')
+  $('body').removeClass('display-userdata-movile')
+  $('body').removeClass('display-userdata-desktop')
+  $('body').removeClass('display-userdata-desktop')
 })
 //ON DESKTOP OPEN USER INFO MENU
-$('.header__top--user-name-content').click(function(){
+$('.header-wrapper-user').click(function(){
   $('body').toggleClass('display-userdata-desktop')
+  $('body').removeClass('display-dropdownlist-movile')
+  $('body').removeClass('display-dropdownlist-desktop')
 })
 //ON MOBILE DISPLAY DROPDOWN MENU
 $('.document__mobil-icon').click(function(){
   $('body').toggleClass('display-dropdownlist-movile')
+  $('body').toggleClass('display-dropdownlist-movile')
+  $('body').toggleClass('display-dropdownlist-desktop')
   $('body').removeClass('display-userdata-movile')
+  $('body').removeClass('display-userdata-desktop')
 })
 //ON MOBILE DISPLAY USER OPTIONS MENU
 $('.user__mobil-icon').click(function(){
   $('body').toggleClass('display-userdata-movile')
+  $('body').toggleClass('display-userdata-desktop')
   $('body').removeClass('display-dropdownlist-movile')
+  $('body').removeClass('display-dropdownlist-desktop')
+})
+//CLOSE BUTTON DROPDOWN MENU
+$('.close_dropdown').click(function(){
+  $('body').removeClass('display-dropdownlist-movile')
+  $('body').removeClass('display-dropdownlist-desktop')
+  
+})
+//CLOSE BUTTON USER MENU
+$('.close_dropdown_user').click(function(){
+  $('body').removeClass('display-userdata-movile')
+  $('body').removeClass('display-userdata-desktop')
+})
+
+//ON MOBILE DISPLAY DROPDOWN MENU
+$('.document__mobil-icon').click(function(){
+  $('body').toggleClass('display-dropdownlist-movile')
+  $('body').removeClass('display-userdata-movile')
 })
 //CLOSE ALL MODALS ON CLICK ESCAPE KEY
 $(document).on('keydown', function(event) {
