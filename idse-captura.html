@@ -27,12 +27,39 @@
           <div class="header__top--logo"> <a href="index.html"><img class="header__top--image" src="img/logo-idse.svg" alt="logo IDSE" role="img"></a></div>
           <div class="header__top--maintopnavigation">
 
+            <div class="header__top--modul web-sm mar-header">
+              <a  class="nav-link marg-nav web-icon" href="idse-webinars.html">
+                <img  class="orange web-img1-sm" src="img/icon-webinar-active-sm.svg" alt=""></a>
+                <div class="web-flag-container" href="#">
+                  <a href="idse-webinars.html">
+                  <div class="web-flag-hover"></div>
+              <div class="web-flag">
+                <div>WEBINARS</div>
+                <img  class="orange web-img2-sm" src="img/webinar-rollover-sm.png" alt="">
+              </div></a>
+              </div>
+          </div>
+            <div class="header__top--module web-lg mar-header" style="margin-right:15px">
+              <div class="web-img1">
+                <a  class="nav-link marg-nav web-icon" href="idse-webinars.html">
+                  <img  class="orange web-img1" src="img/icon-webinar-active.svg" alt=""></a>
+              </div>
+                  <div class="web-flag-container" href="#">
+                    <a href="idse-webinars.html">
+                    <div class="web-flag-hover"></div>
+                <div class="web-flag">
+                  <div>WEBINARS</div>
+                  <img  class="orange web-img1 " src="img/webinar-rollover.svg" alt="">
+                </div></a>
+                </div>
+            </div>
+
             <!--Icon/button documents list móvil-->
-            <div class="document__mobil-icon mobile-icon bg__white"><img src="img/icon-entry.svg"></div>
+            <div class="document__mobil-icon mobile-icon bg__white mar-header"><img src="img/icon-entry.svg"></div>
 
             <!--Icon/button user móvil-->
-            <div class="user__mobil-icon mobile-icon bg__grey"><img src="img/icon-user.svg"></div>
-
+            <div class="user__mobil-icon mobile-icon bg__grey mar-header"><img src="img/icon-user.svg"></div>
+                  
             <!--Menú móvil-->
       			<div id="mobile_menu" class="mobile_menu">
       				<div class="burguer_menu">
@@ -44,13 +71,16 @@
       						</span>
       					</button>
       				</div>
+
       			</div>
+            
+                  
 
             <!--Header Dropdown List-->
             <div class="header__top--module header__top--dropdown">
-              <div class="header__top--dropdown-btn">
-                <div class="header__top--dropdown-content">
-                  <div class="header-wrapper">
+              <div class="header__top--dropdown-btn" id="modal-btn">
+                <div class="header__top--dropdown-content" id="modalBox">
+                  <div class="header-wrapper header-wrapper-dropdown" id="dropdown">
                     <img src="img/icon-entry.svg"><span id="" class="document-name">Apex2016 - 0606066910</span>
                   </div>
                   <div class="header__top--documents-detail">
@@ -74,14 +104,19 @@
                     </div>
                   </div>
                 </div>
+                <div style="width:100%; position:relative">
+                  <a>
+                    <img class="close_dropdown"src="img/close_dropdown.svg">
+                  </a>
+                </div>
               </div>
             </div>
-
+            
             <!--Header User Info-->
             <div class="header__top--module header__top--container">
               <div class="header__top--user-name">
                 <div class="header__top--user-name-content">
-                  <div class="header-wrapper">
+                  <div class="header-wrapper header-wrapper-user">
                     <img src="img/icon-user.svg"><span id="" class="display-name">Minerva Gutierrez</span>
                   </div>
                   <div class="header__top--user-detail">
@@ -106,6 +141,11 @@
                     </div>
                   </div>
                 </div>
+                <div style="width:100%;">
+                  <a>
+                    <img class="close_dropdown_user"src="img/close_dropdown.svg">
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -118,7 +158,7 @@
               <ul>
                 <li class="li-w-sm"><a class="has-submenu" href="">Captura</a>
                   <ul>
-                    <li><a class="submenu-active"href="idse-lotes-enviados.html" >Lotes enviados</a></li>
+                    <li><a href="">Lotes enviados</a></li>
                     <li><a href="">Captura</a></li>
                     <li><a href="">Importación</a></li>
                     <li><a href="">Envío</a></li>
@@ -140,7 +180,7 @@
                 <li><a href="idse-subsidiarias.html">Subsidiarias</a></li>
                 <li class="li-w-sm"><a class="has-submenu" href="idse-monitoreo-historico-de-movimientos.html">Monitoreo</a>
                   <ul>
-                    <li><a href="idse-monitoreo-historico-de-movimientos.html">Histórico de Movimientos</a></li>
+                    <li><a class="submenu-active" href="idse-monitoreo-historico-de-movimientos.html" class="active">Histórico de Movimientos</a></li>
                     <li><a href="idse-monitoreo-ftp.html">Monitoreo FTP</a></li>
                   </ul>
                 </li>
