@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+  <g id="Group_7662" data-name="Group 7662" transform="translate(-303 -17)">
+    <g id="Group_7664" data-name="Group 7664" transform="translate(83)">
+      <rect id="Rectangle_3660" data-name="Rectangle 3660" width="31" height="31" rx="5" transform="translate(220 17)" fill="#ff7212"/>
+      <g id="Group_2017" data-name="Group 2017" transform="translate(-979.479 -6.838)">
+        <g id="Group_2014" data-name="Group 2014" transform="translate(1207 29.838)">
+          <path id="questions" d="M42.722,16H54.237a2.224,2.224,0,0,0,2.222-2.222V2.222A2.224,2.224,0,0,0,54.237,0H42.722A2.224,2.224,0,0,0,40.5,2.222V16.736a2.224,2.224,0,0,0,2.222,2.222H54.237a2.224,2.224,0,0,0,2.222-2.222v0a3.683,3.683,0,0,1-2.222.742H42.722a.741.741,0,1,1,0-1.481ZM41.981,2.222a.741.741,0,0,1,.741-.741H54.237a.741.741,0,0,1,.741.741V13.774a.741.741,0,0,1-.741.741H42.722a2.212,2.212,0,0,0-.741.127Z" transform="translate(-40.5)" fill="#fff"/>
+          <path id="Path_1368" data-name="Path 1368" d="M.28,0H.84a.28.28,0,0,1,.28.28V4.537a.28.28,0,0,1-.28.28H.28A.28.28,0,0,1,0,4.537V.28A.28.28,0,0,1,.28,0Z" transform="translate(7.4 7.07)" fill="#fff"/>
+          <path id="Path_1367" data-name="Path 1367" d="M.28,0H.84a.28.28,0,0,1,.28.28V.84a.28.28,0,0,1-.28.28H.28A.28.28,0,0,1,0,.84V.28A.28.28,0,0,1,.28,0Z" transform="translate(7.4 3.855)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

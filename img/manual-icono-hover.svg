@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="92.25" height="61.5" viewBox="0 0 92.25 61.5">
+  <defs>
+    <filter id="Rectangle_1721" x="15.5" y="0" width="76.75" height="36" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_7665" data-name="Group 7665" transform="translate(-807 -4.5)">
+    <g id="Rectangle_3658" data-name="Rectangle 3658" transform="translate(807 18)" fill="#fff" stroke="#ff7212" stroke-width="1">
+      <rect width="48" height="48" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="47" height="47" rx="4.5" fill="none"/>
+    </g>
+    <g id="Group_2017" data-name="Group 2017" transform="translate(-387)">
+      <g id="Group_2014" data-name="Group 2014" transform="translate(-2142 -18407.162)">
+        <path id="questions" d="M43.6,22.311H59.66a3.1,3.1,0,0,0,3.1-3.1V3.1A3.1,3.1,0,0,0,59.66,0H43.6a3.1,3.1,0,0,0-3.1,3.1V23.344a3.1,3.1,0,0,0,3.1,3.1H59.66a3.1,3.1,0,0,0,3.1-3.1v0a5.138,5.138,0,0,1-3.1,1.035H43.6a1.033,1.033,0,0,1,0-2.066ZM42.566,3.1A1.034,1.034,0,0,1,43.6,2.066H59.66A1.034,1.034,0,0,1,60.693,3.1V19.212a1.034,1.034,0,0,1-1.033,1.033H43.6a3.085,3.085,0,0,0-1.033.177Z" transform="translate(3308.5 18437)" fill="#ff7212"/>
+        <path id="Path_1368" data-name="Path 1368" d="M.391,0h.781a.391.391,0,0,1,.391.391V6.328a.391.391,0,0,1-.391.391H.391A.391.391,0,0,1,0,6.328V.391A.391.391,0,0,1,.391,0Z" transform="translate(3359.322 18446.861)" fill="#ff7212"/>
+        <path id="Path_1367" data-name="Path 1367" d="M.391,0h.781a.391.391,0,0,1,.391.391v.781a.391.391,0,0,1-.391.391H.391A.391.391,0,0,1,0,1.172V.391A.391.391,0,0,1,.391,0Z" transform="translate(3359.322 18442.377)" fill="#ff7212"/>
+      </g>
+    </g>
+    <g id="Group_2019" data-name="Group 2019" transform="translate(-317 -10)">
+      <g transform="matrix(1, 0, 0, 1, 1124, 14.5)" filter="url(#Rectangle_1721)">
+        <path id="Rectangle_1721-2" data-name="Rectangle 1721" d="M4.411,0H57.339c2.436,0,4.411,2.239,4.411,5V16c0,2.761-1.975,5-4.411,5H0V5C0,2.239,1.975,0,4.411,0Z" transform="translate(23 7.5)" fill="#5f5f5f"/>
+      </g>
+      <path id="Path_1370" data-name="Path 1370" d="M.962,0V-8.84H4.017l1.56,6.448L7.137-8.84h3.055V0H8.4V-6.838H8.2L6.474-.39H4.68L2.951-6.838h-.2V0ZM11.375,0l1.989-8.84H16.77L18.759,0H16.965l-.351-1.6H13.52L13.169,0Zm3.38-7.358-.9,4.2h2.418l-.9-4.2ZM19.942,0V-8.84h3.029L25.1-1.56h.13V-8.84h1.794V0H24.076l-2.21-7.28h-.13V0ZM30.667-2.951A1.379,1.379,0,0,0,32.24-1.4a1.379,1.379,0,0,0,1.573-1.547V-8.84h1.794v5.85A3.07,3.07,0,0,1,34.768-.6a3.66,3.66,0,0,1-2.528.76A3.66,3.66,0,0,1,29.711-.6a3.07,3.07,0,0,1-.838-2.386V-8.84h1.794ZM36.647,0l1.989-8.84h3.406L44.031,0H42.237l-.351-1.6H38.792L38.441,0Zm3.38-7.358-.9,4.2h2.418l-.9-4.2ZM50.245,0H45.214V-8.84h1.794v7.254h3.237Z" transform="translate(1153 37)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
